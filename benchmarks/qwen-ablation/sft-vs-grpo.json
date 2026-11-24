@@ -1,0 +1,20 @@
+{
+  "before": "Qwen3-4B SFT",
+  "after": "Qwen3-4B SFT + GRPO",
+  "cases": 300,
+  "exact_delta": 0.0033333333333333335,
+  "exact_bootstrap_95": [
+    0.0,
+    0.01
+  ],
+  "field_macro_f1_delta": 0.0013752350255170631,
+  "field_macro_f1_bootstrap_95": [
+    0.0,
+    0.0036804717111682027
+  ],
+  "mcnemar_exact_p": 1.0,
+  "exact_gains": 1,
+  "exact_losses": 0,
+  "bootstrap_draws": 1000,
+  "bootstrap_seed": 42
+}

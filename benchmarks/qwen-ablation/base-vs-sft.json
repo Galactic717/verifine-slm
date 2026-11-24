@@ -1,0 +1,20 @@
+{
+  "before": "Qwen3-4B base",
+  "after": "Qwen3-4B SFT",
+  "cases": 300,
+  "exact_delta": 0.15,
+  "exact_bootstrap_95": [
+    0.10666666666666667,
+    0.19666666666666666
+  ],
+  "field_macro_f1_delta": 0.03716883716433639,
+  "field_macro_f1_bootstrap_95": [
+    0.02657881675259455,
+    0.04934429405998419
+  ],
+  "mcnemar_exact_p": 2.1358426138817777e-10,
+  "exact_gains": 50,
+  "exact_losses": 5,
+  "bootstrap_draws": 1000,
+  "bootstrap_seed": 42
+}

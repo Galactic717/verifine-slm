@@ -1,0 +1,38 @@
+[
+  {
+    "run": "qwen-sft-pilot",
+    "optimizer_steps": 64,
+    "adapter_sha256": "ed1149e4bb980c1b46cd1f0dc9edfc019fb0707193ba8fa760707df20e89d8e2",
+    "train_runtime_s": 205.694,
+    "train_loss": 0.021680281166936766,
+    "steps_with_nonzero_gradient": 64,
+    "gpu": "NVIDIA GeForce RTX 5080",
+    "peak_cuda_reserved_mib": 6516.0
+  },
+  {
+    "run": "qwen-grpo-pilot",
+    "optimizer_steps": 20,
+    "adapter_sha256": "ed1149e4bb980c1b46cd1f0dc9edfc019fb0707193ba8fa760707df20e89d8e2",
+    "train_runtime_s": 142.5869,
+    "train_loss": 0.0,
+    "steps_with_nonzero_gradient": 0,
+    "gpu": "NVIDIA GeForce RTX 5080",
+    "peak_cuda_reserved_mib": 4894.0,
+    "generations": 80,
+    "mean_reward": 1.0,
+    "groups_with_reward_variance": 0
+  },
+  {
+    "run": "qwen-grpo-challenge",
+    "optimizer_steps": 20,
+    "adapter_sha256": "d029b3148b8c3398daf4794118eb578bb62325706442d6ab253fce4d37b0b9f2",
+    "train_runtime_s": 166.3899,
+    "train_loss": 0.011947360634803773,
+    "steps_with_nonzero_gradient": 2,
+    "gpu": "NVIDIA GeForce RTX 5080",
+    "peak_cuda_reserved_mib": 4964.0,
+    "generations": 80,
+    "mean_reward": 0.8289583333333332,
+    "groups_with_reward_variance": 2
+  }
+]
