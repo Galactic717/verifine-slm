@@ -1,0 +1,12 @@
+model: Qwen/Qwen3-4B-Instruct-2507
+revision: cdbee75f17c01a7cc42f958dc650907174af0554
+output: artifacts/qwen-grpo
+adapter: artifacts/qwen-sft
+max_steps: 120
+learning_rate: 0.00001
+gradient_accumulation: 4
+num_generations: 4
+challenge_ratio: 0.60
+max_length: 1024
+max_completion_length: 144
+beta: 0

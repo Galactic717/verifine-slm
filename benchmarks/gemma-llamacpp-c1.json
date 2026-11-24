@@ -1,0 +1,2933 @@
+{
+  "model": "gemma-4-E4B-local",
+  "backend": "llama",
+  "count": 48,
+  "warmup": 8,
+  "concurrency": 1,
+  "constrained": true,
+  "max_tokens": 240,
+  "seed": 42,
+  "dataset_sha256": "ff0a319f5d2141d0e85100de10edff6f44258c1681894ad5c5af7ecf4bc2a808",
+  "summary": {
+    "successful": 48,
+    "errors": 0,
+    "wall_s": 152.09814579998783,
+    "requests_per_s": 0.31558570124267643,
+    "output_tokens_per_s": 72.72278003010925,
+    "peak_board_vram_mib": 15730.0,
+    "board_power_sample_mean_w": 160.7311570247934,
+    "electricity_usd_per_kwh_assumption": 0.15,
+    "gpu_electricity_usd_per_million_total_tokens": 0.033523820629364494,
+    "gpu_electricity_usd_per_million_requests": 21.221276871317503,
+    "ttft_ms_p50": 755.5371000053128,
+    "ttft_ms_p95": 7161.06174000888,
+    "tpot_ms_p50": 3.544911711664476,
+    "tpot_ms_p95": 3.9618109591244695,
+    "elapsed_ms_p50": 2353.427649992227,
+    "elapsed_ms_p95": 7841.969875006178
+  },
+  "requests": [
+    {
+      "id": "invoice-go0008",
+      "error": null,
+      "elapsed_ms": 2386.916100003873,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 443,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "invoice-go0009",
+      "error": null,
+      "elapsed_ms": 2411.037600002601,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 425,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0010",
+      "error": null,
+      "elapsed_ms": 2587.7660999976797,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 386,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0011",
+      "error": null,
+      "elapsed_ms": 2852.559699997073,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 371,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0012",
+      "error": null,
+      "elapsed_ms": 2371.8459000083385,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 416,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0013",
+      "error": null,
+      "elapsed_ms": 2354.5620999939274,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 389,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "support-go0014",
+      "error": null,
+      "elapsed_ms": 1979.6231999935117,
+      "ttft_ms": 1589.7782999963965,
+      "tpot_ms": 1.935486021524881,
+      "prompt_tokens": 377,
+      "completion_tokens": 187,
+      "finish_reason": "stop"
+    },
+    {
+      "id": "support-go0015",
+      "error": null,
+      "elapsed_ms": 3381.092700001318,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 366,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "invoice-go0016",
+      "error": null,
+      "elapsed_ms": 3397.41080001113,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 452,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "invoice-go0017",
+      "error": null,
+      "elapsed_ms": 17914.497299992945,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 436,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0018",
+      "error": null,
+      "elapsed_ms": 3387.918399996124,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 393,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0019",
+      "error": null,
+      "elapsed_ms": 3601.2920000066515,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 368,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0020",
+      "error": null,
+      "elapsed_ms": 3544.520299998112,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 414,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0021",
+      "error": null,
+      "elapsed_ms": 3053.7156999926083,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 387,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "support-go0022",
+      "error": null,
+      "elapsed_ms": 1061.7756999999983,
+      "ttft_ms": 651.7250000033528,
+      "tpot_ms": 3.7885376237537987,
+      "prompt_tokens": 387,
+      "completion_tokens": 102,
+      "finish_reason": "stop"
+    },
+    {
+      "id": "support-go0023",
+      "error": null,
+      "elapsed_ms": 2258.625000002212,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 370,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "invoice-go0024",
+      "error": null,
+      "elapsed_ms": 2290.3748999960953,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 451,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "invoice-go0025",
+      "error": null,
+      "elapsed_ms": 2278.175800005556,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 430,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0026",
+      "error": null,
+      "elapsed_ms": 2339.104300001054,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 412,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0027",
+      "error": null,
+      "elapsed_ms": 2340.3962000011234,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 391,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0028",
+      "error": null,
+      "elapsed_ms": 2330.2532999950927,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 434,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0029",
+      "error": null,
+      "elapsed_ms": 2292.0560000056867,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 396,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "support-go0030",
+      "error": null,
+      "elapsed_ms": 1044.962599989958,
+      "ttft_ms": 621.3486999913584,
+      "tpot_ms": 4.005129292967137,
+      "prompt_tokens": 384,
+      "completion_tokens": 100,
+      "finish_reason": "stop"
+    },
+    {
+      "id": "support-go0031",
+      "error": null,
+      "elapsed_ms": 2321.806200008723,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 366,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "invoice-go0032",
+      "error": null,
+      "elapsed_ms": 2340.3603000042494,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 443,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "invoice-go0033",
+      "error": null,
+      "elapsed_ms": 2352.174500003457,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 427,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0034",
+      "error": null,
+      "elapsed_ms": 2340.1604000100633,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 400,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0035",
+      "error": null,
+      "elapsed_ms": 2329.4685000000754,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 379,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0036",
+      "error": null,
+      "elapsed_ms": 2338.2749000011245,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 425,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0037",
+      "error": null,
+      "elapsed_ms": 2352.293199990527,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 407,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "support-go0038",
+      "error": null,
+      "elapsed_ms": 1176.2436000135494,
+      "ttft_ms": 755.5371000053128,
+      "tpot_ms": 3.544911711664476,
+      "prompt_tokens": 380,
+      "completion_tokens": 112,
+      "finish_reason": "stop"
+    },
+    {
+      "id": "support-go0039",
+      "error": null,
+      "elapsed_ms": 2336.520999990171,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 367,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "invoice-go0040",
+      "error": null,
+      "elapsed_ms": 2323.581799995736,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 453,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "invoice-go0041",
+      "error": null,
+      "elapsed_ms": 2411.8482999911066,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 423,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0042",
+      "error": null,
+      "elapsed_ms": 2329.455400002189,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 399,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0043",
+      "error": null,
+      "elapsed_ms": 2338.093900005333,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 377,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0044",
+      "error": null,
+      "elapsed_ms": 2369.4275000016205,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 424,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0045",
+      "error": null,
+      "elapsed_ms": 2342.413000005763,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 401,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "support-go0046",
+      "error": null,
+      "elapsed_ms": 2339.9616999959107,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 390,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "support-go0047",
+      "error": null,
+      "elapsed_ms": 2414.4831000012346,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 370,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "invoice-go0048",
+      "error": null,
+      "elapsed_ms": 2406.2745999981416,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 451,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "invoice-go0049",
+      "error": null,
+      "elapsed_ms": 7091.014799996628,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 432,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0050",
+      "error": null,
+      "elapsed_ms": 3169.9786000099266,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 400,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0051",
+      "error": null,
+      "elapsed_ms": 2404.141499995603,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 366,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0052",
+      "error": null,
+      "elapsed_ms": 2356.4334999973653,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 422,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0053",
+      "error": null,
+      "elapsed_ms": 5520.4403000097955,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 402,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "support-go0054",
+      "error": null,
+      "elapsed_ms": 8246.330300011323,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 370,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "support-go0055",
+      "error": null,
+      "elapsed_ms": 8609.084800002165,
+      "ttft_ms": 8553.882600012003,
+      "tpot_ms": 0.22976234310236468,
+      "prompt_tokens": 372,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    }
+  ],
+  "gpu_samples": [
+    {
+      "elapsed_s": 0.06715979998989496,
+      "vram_mib": 14781.0,
+      "watts": 171.91
+    },
+    {
+      "elapsed_s": 0.36380959999223705,
+      "vram_mib": 14781.0,
+      "watts": 152.19
+    },
+    {
+      "elapsed_s": 0.6581384999881266,
+      "vram_mib": 14781.0,
+      "watts": 149.77
+    },
+    {
+      "elapsed_s": 0.9562695999920834,
+      "vram_mib": 14781.0,
+      "watts": 148.1
+    },
+    {
+      "elapsed_s": 1.248710799991386,
+      "vram_mib": 14781.0,
+      "watts": 151.88
+    },
+    {
+      "elapsed_s": 1.5426423999888357,
+      "vram_mib": 14783.0,
+      "watts": 159.57
+    },
+    {
+      "elapsed_s": 1.8409672999987379,
+      "vram_mib": 14783.0,
+      "watts": 160.05
+    },
+    {
+      "elapsed_s": 2.1379395999974804,
+      "vram_mib": 14787.0,
+      "watts": 166.53
+    },
+    {
+      "elapsed_s": 2.4344963999901665,
+      "vram_mib": 14787.0,
+      "watts": 179.53
+    },
+    {
+      "elapsed_s": 2.729035699987435,
+      "vram_mib": 14787.0,
+      "watts": 179.59
+    },
+    {
+      "elapsed_s": 3.0248557000013534,
+      "vram_mib": 14787.0,
+      "watts": 173.24
+    },
+    {
+      "elapsed_s": 3.3209242000011727,
+      "vram_mib": 14787.0,
+      "watts": 166.05
+    },
+    {
+      "elapsed_s": 3.613599599993904,
+      "vram_mib": 14787.0,
+      "watts": 153.84
+    },
+    {
+      "elapsed_s": 3.912156899998081,
+      "vram_mib": 14787.0,
+      "watts": 160.71
+    },
+    {
+      "elapsed_s": 4.226107800001046,
+      "vram_mib": 14787.0,
+      "watts": 161.64
+    },
+    {
+      "elapsed_s": 4.538412099995185,
+      "vram_mib": 14787.0,
+      "watts": 160.08
+    },
+    {
+      "elapsed_s": 4.8294695999938995,
+      "vram_mib": 14787.0,
+      "watts": 159.62
+    },
+    {
+      "elapsed_s": 5.1388252999895485,
+      "vram_mib": 14798.0,
+      "watts": 146.45
+    },
+    {
+      "elapsed_s": 5.444353899991256,
+      "vram_mib": 15230.0,
+      "watts": 145.38
+    },
+    {
+      "elapsed_s": 5.750658599994495,
+      "vram_mib": 15282.0,
+      "watts": 165.29
+    },
+    {
+      "elapsed_s": 6.057718600000953,
+      "vram_mib": 15282.0,
+      "watts": 174.86
+    },
+    {
+      "elapsed_s": 6.359159599989653,
+      "vram_mib": 15282.0,
+      "watts": 188.2
+    },
+    {
+      "elapsed_s": 6.696846299993922,
+      "vram_mib": 15282.0,
+      "watts": 184.52
+    },
+    {
+      "elapsed_s": 7.024912399996538,
+      "vram_mib": 15282.0,
+      "watts": 176.4
+    },
+    {
+      "elapsed_s": 7.362889700001688,
+      "vram_mib": 15282.0,
+      "watts": 174.6
+    },
+    {
+      "elapsed_s": 7.710026899992954,
+      "vram_mib": 15282.0,
+      "watts": 167.02
+    },
+    {
+      "elapsed_s": 8.04504129999259,
+      "vram_mib": 15282.0,
+      "watts": 143.39
+    },
+    {
+      "elapsed_s": 8.390921699989121,
+      "vram_mib": 15282.0,
+      "watts": 143.57
+    },
+    {
+      "elapsed_s": 8.727062399993883,
+      "vram_mib": 15282.0,
+      "watts": 145.7
+    },
+    {
+      "elapsed_s": 9.088847699997132,
+      "vram_mib": 15282.0,
+      "watts": 168.43
+    },
+    {
+      "elapsed_s": 9.403485599992564,
+      "vram_mib": 15282.0,
+      "watts": 168.21
+    },
+    {
+      "elapsed_s": 9.733816599997226,
+      "vram_mib": 15282.0,
+      "watts": 167.79
+    },
+    {
+      "elapsed_s": 10.033758299992769,
+      "vram_mib": 15282.0,
+      "watts": 174.87
+    },
+    {
+      "elapsed_s": 10.348171899997396,
+      "vram_mib": 15282.0,
+      "watts": 180.56
+    },
+    {
+      "elapsed_s": 10.641598699992755,
+      "vram_mib": 15282.0,
+      "watts": 174.55
+    },
+    {
+      "elapsed_s": 10.938022099988302,
+      "vram_mib": 15282.0,
+      "watts": 179.18
+    },
+    {
+      "elapsed_s": 11.232257799987565,
+      "vram_mib": 15282.0,
+      "watts": 183.12
+    },
+    {
+      "elapsed_s": 11.527090499992482,
+      "vram_mib": 15282.0,
+      "watts": 190.53
+    },
+    {
+      "elapsed_s": 11.823857600000338,
+      "vram_mib": 15282.0,
+      "watts": 193.5
+    },
+    {
+      "elapsed_s": 12.117923099998734,
+      "vram_mib": 15282.0,
+      "watts": 184.05
+    },
+    {
+      "elapsed_s": 12.415297200001078,
+      "vram_mib": 15282.0,
+      "watts": 177.3
+    },
+    {
+      "elapsed_s": 12.708491999990656,
+      "vram_mib": 15282.0,
+      "watts": 165.94
+    },
+    {
+      "elapsed_s": 13.003568599990103,
+      "vram_mib": 15282.0,
+      "watts": 152.4
+    },
+    {
+      "elapsed_s": 13.298292199993739,
+      "vram_mib": 15282.0,
+      "watts": 151.86
+    },
+    {
+      "elapsed_s": 13.595230599996285,
+      "vram_mib": 15282.0,
+      "watts": 152.46
+    },
+    {
+      "elapsed_s": 13.890115499991225,
+      "vram_mib": 15282.0,
+      "watts": 153.34
+    },
+    {
+      "elapsed_s": 14.187468099989928,
+      "vram_mib": 15282.0,
+      "watts": 161.5
+    },
+    {
+      "elapsed_s": 14.48362569999881,
+      "vram_mib": 15282.0,
+      "watts": 160.93
+    },
+    {
+      "elapsed_s": 14.779328599994187,
+      "vram_mib": 15053.0,
+      "watts": 160.84
+    },
+    {
+      "elapsed_s": 15.092022400000133,
+      "vram_mib": 15053.0,
+      "watts": 161.91
+    },
+    {
+      "elapsed_s": 15.386016499993275,
+      "vram_mib": 15053.0,
+      "watts": 153.04
+    },
+    {
+      "elapsed_s": 15.68319359999441,
+      "vram_mib": 15053.0,
+      "watts": 151.81
+    },
+    {
+      "elapsed_s": 15.993459599994821,
+      "vram_mib": 15053.0,
+      "watts": 152.16
+    },
+    {
+      "elapsed_s": 16.290196099987952,
+      "vram_mib": 15199.0,
+      "watts": 155.93
+    },
+    {
+      "elapsed_s": 16.582425499989768,
+      "vram_mib": 15239.0,
+      "watts": 159.68
+    },
+    {
+      "elapsed_s": 16.90413099998841,
+      "vram_mib": 15399.0,
+      "watts": 154.18
+    },
+    {
+      "elapsed_s": 17.204510799987474,
+      "vram_mib": 15351.0,
+      "watts": 148.54
+    },
+    {
+      "elapsed_s": 17.50060129999474,
+      "vram_mib": 15351.0,
+      "watts": 141.53
+    },
+    {
+      "elapsed_s": 17.79763699999603,
+      "vram_mib": 15351.0,
+      "watts": 149.04
+    },
+    {
+      "elapsed_s": 18.095762099997955,
+      "vram_mib": 15425.0,
+      "watts": 160.38
+    },
+    {
+      "elapsed_s": 18.39190809999127,
+      "vram_mib": 15425.0,
+      "watts": 168.44
+    },
+    {
+      "elapsed_s": 18.68709899998794,
+      "vram_mib": 15425.0,
+      "watts": 182.73
+    },
+    {
+      "elapsed_s": 18.981503099988913,
+      "vram_mib": 15425.0,
+      "watts": 194.01
+    },
+    {
+      "elapsed_s": 19.27435379999224,
+      "vram_mib": 15425.0,
+      "watts": 198.32
+    },
+    {
+      "elapsed_s": 19.571240299992496,
+      "vram_mib": 15425.0,
+      "watts": 201.56
+    },
+    {
+      "elapsed_s": 19.87533129999065,
+      "vram_mib": 15505.0,
+      "watts": 201.62
+    },
+    {
+      "elapsed_s": 20.16642709998996,
+      "vram_mib": 15505.0,
+      "watts": 194.02
+    },
+    {
+      "elapsed_s": 20.46184479999647,
+      "vram_mib": 15505.0,
+      "watts": 187.62
+    },
+    {
+      "elapsed_s": 20.757989399993676,
+      "vram_mib": 15505.0,
+      "watts": 156.13
+    },
+    {
+      "elapsed_s": 21.070482899987837,
+      "vram_mib": 15505.0,
+      "watts": 154.74
+    },
+    {
+      "elapsed_s": 21.364157199990586,
+      "vram_mib": 15505.0,
+      "watts": 155.82
+    },
+    {
+      "elapsed_s": 21.65631890000077,
+      "vram_mib": 15505.0,
+      "watts": 164.38
+    },
+    {
+      "elapsed_s": 21.951608899995335,
+      "vram_mib": 15505.0,
+      "watts": 169.38
+    },
+    {
+      "elapsed_s": 22.24936539999908,
+      "vram_mib": 15505.0,
+      "watts": 175.07
+    },
+    {
+      "elapsed_s": 22.54882299999008,
+      "vram_mib": 15505.0,
+      "watts": 179.13
+    },
+    {
+      "elapsed_s": 22.844167699993704,
+      "vram_mib": 15505.0,
+      "watts": 181.69
+    },
+    {
+      "elapsed_s": 23.138136499997927,
+      "vram_mib": 15505.0,
+      "watts": 184.88
+    },
+    {
+      "elapsed_s": 23.43555349999224,
+      "vram_mib": 15505.0,
+      "watts": 187.76
+    },
+    {
+      "elapsed_s": 23.732738599996082,
+      "vram_mib": 15505.0,
+      "watts": 197.51
+    },
+    {
+      "elapsed_s": 24.027327099989634,
+      "vram_mib": 15507.0,
+      "watts": 196.57
+    },
+    {
+      "elapsed_s": 24.322470799990697,
+      "vram_mib": 15507.0,
+      "watts": 192.84
+    },
+    {
+      "elapsed_s": 24.61741359998996,
+      "vram_mib": 15507.0,
+      "watts": 182.03
+    },
+    {
+      "elapsed_s": 24.91368669999065,
+      "vram_mib": 15507.0,
+      "watts": 172.91
+    },
+    {
+      "elapsed_s": 25.20907399999851,
+      "vram_mib": 15507.0,
+      "watts": 155.75
+    },
+    {
+      "elapsed_s": 25.50436429999536,
+      "vram_mib": 15507.0,
+      "watts": 144.59
+    },
+    {
+      "elapsed_s": 25.800680999993347,
+      "vram_mib": 15507.0,
+      "watts": 154.99
+    },
+    {
+      "elapsed_s": 26.094161000000895,
+      "vram_mib": 15507.0,
+      "watts": 166.47
+    },
+    {
+      "elapsed_s": 26.3926810999983,
+      "vram_mib": 15507.0,
+      "watts": 171.69
+    },
+    {
+      "elapsed_s": 26.685461999994004,
+      "vram_mib": 15507.0,
+      "watts": 184.05
+    },
+    {
+      "elapsed_s": 26.982058399997186,
+      "vram_mib": 15507.0,
+      "watts": 160.3
+    },
+    {
+      "elapsed_s": 27.278270599999814,
+      "vram_mib": 15507.0,
+      "watts": 153.21
+    },
+    {
+      "elapsed_s": 27.57246579999628,
+      "vram_mib": 15507.0,
+      "watts": 143.15
+    },
+    {
+      "elapsed_s": 27.868866799995885,
+      "vram_mib": 15507.0,
+      "watts": 142.62
+    },
+    {
+      "elapsed_s": 28.18354279999039,
+      "vram_mib": 15507.0,
+      "watts": 143.82
+    },
+    {
+      "elapsed_s": 28.47692200000165,
+      "vram_mib": 15507.0,
+      "watts": 144.7
+    },
+    {
+      "elapsed_s": 28.773128000000725,
+      "vram_mib": 15507.0,
+      "watts": 145.21
+    },
+    {
+      "elapsed_s": 29.08904469999834,
+      "vram_mib": 15507.0,
+      "watts": 143.62
+    },
+    {
+      "elapsed_s": 29.39542739999888,
+      "vram_mib": 15473.0,
+      "watts": 145.55
+    },
+    {
+      "elapsed_s": 29.698320600000443,
+      "vram_mib": 15514.0,
+      "watts": 144.15
+    },
+    {
+      "elapsed_s": 29.986260899997433,
+      "vram_mib": 15514.0,
+      "watts": 145.1
+    },
+    {
+      "elapsed_s": 30.279905099989264,
+      "vram_mib": 15514.0,
+      "watts": 144.92
+    },
+    {
+      "elapsed_s": 30.584484599996358,
+      "vram_mib": 15514.0,
+      "watts": 144.17
+    },
+    {
+      "elapsed_s": 30.90464670000074,
+      "vram_mib": 15514.0,
+      "watts": 143.73
+    },
+    {
+      "elapsed_s": 31.217600099989795,
+      "vram_mib": 15514.0,
+      "watts": 142.77
+    },
+    {
+      "elapsed_s": 31.513725899989367,
+      "vram_mib": 15556.0,
+      "watts": 142.85
+    },
+    {
+      "elapsed_s": 31.807565099996282,
+      "vram_mib": 15556.0,
+      "watts": 144.15
+    },
+    {
+      "elapsed_s": 32.10350249998737,
+      "vram_mib": 15556.0,
+      "watts": 142.83
+    },
+    {
+      "elapsed_s": 32.41907109999738,
+      "vram_mib": 15556.0,
+      "watts": 145.27
+    },
+    {
+      "elapsed_s": 32.7189098999952,
+      "vram_mib": 15556.0,
+      "watts": 145.58
+    },
+    {
+      "elapsed_s": 33.01608459999261,
+      "vram_mib": 15556.0,
+      "watts": 143.37
+    },
+    {
+      "elapsed_s": 33.310122599999886,
+      "vram_mib": 15612.0,
+      "watts": 141.98
+    },
+    {
+      "elapsed_s": 33.605716699996265,
+      "vram_mib": 15612.0,
+      "watts": 138.96
+    },
+    {
+      "elapsed_s": 33.898439399999916,
+      "vram_mib": 15612.0,
+      "watts": 137.74
+    },
+    {
+      "elapsed_s": 34.204869499997585,
+      "vram_mib": 15612.0,
+      "watts": 132.85
+    },
+    {
+      "elapsed_s": 34.49370729998918,
+      "vram_mib": 15612.0,
+      "watts": 130.79
+    },
+    {
+      "elapsed_s": 34.812210599993705,
+      "vram_mib": 15584.0,
+      "watts": 144.56
+    },
+    {
+      "elapsed_s": 35.123126599995885,
+      "vram_mib": 15627.0,
+      "watts": 162.16
+    },
+    {
+      "elapsed_s": 35.430887199996505,
+      "vram_mib": 15627.0,
+      "watts": 167.01
+    },
+    {
+      "elapsed_s": 35.73968590000004,
+      "vram_mib": 15627.0,
+      "watts": 181.94
+    },
+    {
+      "elapsed_s": 36.04964990000008,
+      "vram_mib": 15627.0,
+      "watts": 178.2
+    },
+    {
+      "elapsed_s": 36.36425759999838,
+      "vram_mib": 15627.0,
+      "watts": 180.43
+    },
+    {
+      "elapsed_s": 36.67372459999751,
+      "vram_mib": 15627.0,
+      "watts": 177.07
+    },
+    {
+      "elapsed_s": 37.00082819999079,
+      "vram_mib": 15652.0,
+      "watts": 179.67
+    },
+    {
+      "elapsed_s": 37.29345369999646,
+      "vram_mib": 15652.0,
+      "watts": 177.18
+    },
+    {
+      "elapsed_s": 37.60419469999033,
+      "vram_mib": 15652.0,
+      "watts": 178.65
+    },
+    {
+      "elapsed_s": 37.90603790000023,
+      "vram_mib": 15663.0,
+      "watts": 178.58
+    },
+    {
+      "elapsed_s": 38.21620989999792,
+      "vram_mib": 15707.0,
+      "watts": 174.59
+    },
+    {
+      "elapsed_s": 38.52229449999868,
+      "vram_mib": 15709.0,
+      "watts": 171.64
+    },
+    {
+      "elapsed_s": 38.83187569999427,
+      "vram_mib": 15727.0,
+      "watts": 167.46
+    },
+    {
+      "elapsed_s": 39.12273160000041,
+      "vram_mib": 15727.0,
+      "watts": 167.2
+    },
+    {
+      "elapsed_s": 39.41726319999725,
+      "vram_mib": 15728.0,
+      "watts": 169.07
+    },
+    {
+      "elapsed_s": 39.73941689998901,
+      "vram_mib": 15728.0,
+      "watts": 168.68
+    },
+    {
+      "elapsed_s": 40.03716969999368,
+      "vram_mib": 15728.0,
+      "watts": 171.66
+    },
+    {
+      "elapsed_s": 40.331487599993125,
+      "vram_mib": 15725.0,
+      "watts": 170.25
+    },
+    {
+      "elapsed_s": 40.627435999995214,
+      "vram_mib": 15730.0,
+      "watts": 168.87
+    },
+    {
+      "elapsed_s": 40.925215399998706,
+      "vram_mib": 15730.0,
+      "watts": 169.53
+    },
+    {
+      "elapsed_s": 41.215756599995075,
+      "vram_mib": 15715.0,
+      "watts": 171.06
+    },
+    {
+      "elapsed_s": 41.52327029999287,
+      "vram_mib": 15687.0,
+      "watts": 170.27
+    },
+    {
+      "elapsed_s": 41.81749809999019,
+      "vram_mib": 15689.0,
+      "watts": 172.1
+    },
+    {
+      "elapsed_s": 42.11246019999089,
+      "vram_mib": 15684.0,
+      "watts": 166.52
+    },
+    {
+      "elapsed_s": 42.40509469999233,
+      "vram_mib": 15687.0,
+      "watts": 166.39
+    },
+    {
+      "elapsed_s": 42.70450149998942,
+      "vram_mib": 15687.0,
+      "watts": 168.46
+    },
+    {
+      "elapsed_s": 43.01365059999807,
+      "vram_mib": 15692.0,
+      "watts": 175.02
+    },
+    {
+      "elapsed_s": 43.311408599998686,
+      "vram_mib": 15696.0,
+      "watts": 178.02
+    },
+    {
+      "elapsed_s": 43.60276999999769,
+      "vram_mib": 15696.0,
+      "watts": 181.03
+    },
+    {
+      "elapsed_s": 43.896303299989086,
+      "vram_mib": 15696.0,
+      "watts": 183.84
+    },
+    {
+      "elapsed_s": 44.19493599999987,
+      "vram_mib": 15691.0,
+      "watts": 187.39
+    },
+    {
+      "elapsed_s": 44.48867690000043,
+      "vram_mib": 15689.0,
+      "watts": 192.85
+    },
+    {
+      "elapsed_s": 44.78688729999703,
+      "vram_mib": 15689.0,
+      "watts": 195.38
+    },
+    {
+      "elapsed_s": 45.092244299987215,
+      "vram_mib": 15698.0,
+      "watts": 200.11
+    },
+    {
+      "elapsed_s": 45.388885799999116,
+      "vram_mib": 15698.0,
+      "watts": 199.75
+    },
+    {
+      "elapsed_s": 45.68215110000165,
+      "vram_mib": 15697.0,
+      "watts": 196.86
+    },
+    {
+      "elapsed_s": 45.977072099994984,
+      "vram_mib": 15697.0,
+      "watts": 195.7
+    },
+    {
+      "elapsed_s": 46.27009989999351,
+      "vram_mib": 15695.0,
+      "watts": 197.53
+    },
+    {
+      "elapsed_s": 46.56945650000125,
+      "vram_mib": 15695.0,
+      "watts": 207.31
+    },
+    {
+      "elapsed_s": 46.87609759999032,
+      "vram_mib": 15698.0,
+      "watts": 213.63
+    },
+    {
+      "elapsed_s": 47.171357999992324,
+      "vram_mib": 15711.0,
+      "watts": 221.31
+    },
+    {
+      "elapsed_s": 47.469009799999185,
+      "vram_mib": 15711.0,
+      "watts": 226.0
+    },
+    {
+      "elapsed_s": 47.76787549999426,
+      "vram_mib": 15711.0,
+      "watts": 229.2
+    },
+    {
+      "elapsed_s": 48.06331339999451,
+      "vram_mib": 15711.0,
+      "watts": 230.14
+    },
+    {
+      "elapsed_s": 48.35723080000025,
+      "vram_mib": 15709.0,
+      "watts": 229.42
+    },
+    {
+      "elapsed_s": 48.65137419999519,
+      "vram_mib": 15673.0,
+      "watts": 230.88
+    },
+    {
+      "elapsed_s": 48.944840600001044,
+      "vram_mib": 15674.0,
+      "watts": 231.19
+    },
+    {
+      "elapsed_s": 49.24027149999165,
+      "vram_mib": 15615.0,
+      "watts": 214.31
+    },
+    {
+      "elapsed_s": 49.53860069999064,
+      "vram_mib": 15616.0,
+      "watts": 202.98
+    },
+    {
+      "elapsed_s": 49.829146799995215,
+      "vram_mib": 15616.0,
+      "watts": 196.87
+    },
+    {
+      "elapsed_s": 50.12468259999878,
+      "vram_mib": 15633.0,
+      "watts": 200.26
+    },
+    {
+      "elapsed_s": 50.42524189999676,
+      "vram_mib": 15631.0,
+      "watts": 203.82
+    },
+    {
+      "elapsed_s": 50.721252699993784,
+      "vram_mib": 15631.0,
+      "watts": 208.84
+    },
+    {
+      "elapsed_s": 51.01252659999591,
+      "vram_mib": 15638.0,
+      "watts": 218.75
+    },
+    {
+      "elapsed_s": 51.30834469999536,
+      "vram_mib": 15645.0,
+      "watts": 223.16
+    },
+    {
+      "elapsed_s": 51.600115199995344,
+      "vram_mib": 15645.0,
+      "watts": 227.92
+    },
+    {
+      "elapsed_s": 51.89770029998908,
+      "vram_mib": 15645.0,
+      "watts": 230.11
+    },
+    {
+      "elapsed_s": 52.19252599999891,
+      "vram_mib": 15677.0,
+      "watts": 231.68
+    },
+    {
+      "elapsed_s": 52.48727709999366,
+      "vram_mib": 15677.0,
+      "watts": 231.88
+    },
+    {
+      "elapsed_s": 52.82714789999591,
+      "vram_mib": 15674.0,
+      "watts": 211.96
+    },
+    {
+      "elapsed_s": 53.124405999988085,
+      "vram_mib": 15648.0,
+      "watts": 204.89
+    },
+    {
+      "elapsed_s": 53.436225500001456,
+      "vram_mib": 15648.0,
+      "watts": 200.7
+    },
+    {
+      "elapsed_s": 53.7306671999977,
+      "vram_mib": 15701.0,
+      "watts": 201.76
+    },
+    {
+      "elapsed_s": 54.04121559999476,
+      "vram_mib": 15701.0,
+      "watts": 211.36
+    },
+    {
+      "elapsed_s": 54.33903439999267,
+      "vram_mib": 15701.0,
+      "watts": 210.16
+    },
+    {
+      "elapsed_s": 54.64917009999044,
+      "vram_mib": 15701.0,
+      "watts": 208.33
+    },
+    {
+      "elapsed_s": 54.94114989999798,
+      "vram_mib": 15722.0,
+      "watts": 206.8
+    },
+    {
+      "elapsed_s": 55.23683579999488,
+      "vram_mib": 15722.0,
+      "watts": 206.75
+    },
+    {
+      "elapsed_s": 55.536497499997495,
+      "vram_mib": 15722.0,
+      "watts": 197.35
+    },
+    {
+      "elapsed_s": 55.83165319998807,
+      "vram_mib": 15722.0,
+      "watts": 196.98
+    },
+    {
+      "elapsed_s": 56.128661499999,
+      "vram_mib": 15722.0,
+      "watts": 187.19
+    },
+    {
+      "elapsed_s": 56.42538239998976,
+      "vram_mib": 15495.0,
+      "watts": 186.66
+    },
+    {
+      "elapsed_s": 56.72393559999182,
+      "vram_mib": 15495.0,
+      "watts": 184.15
+    },
+    {
+      "elapsed_s": 57.020307699989644,
+      "vram_mib": 15499.0,
+      "watts": 187.29
+    },
+    {
+      "elapsed_s": 57.31787749999785,
+      "vram_mib": 15499.0,
+      "watts": 191.13
+    },
+    {
+      "elapsed_s": 57.6135532999906,
+      "vram_mib": 15499.0,
+      "watts": 194.34
+    },
+    {
+      "elapsed_s": 57.90867140000046,
+      "vram_mib": 15530.0,
+      "watts": 201.9
+    },
+    {
+      "elapsed_s": 58.20606339999358,
+      "vram_mib": 15530.0,
+      "watts": 200.73
+    },
+    {
+      "elapsed_s": 58.501401299989084,
+      "vram_mib": 15530.0,
+      "watts": 200.64
+    },
+    {
+      "elapsed_s": 58.796148900000844,
+      "vram_mib": 15292.0,
+      "watts": 195.33
+    },
+    {
+      "elapsed_s": 59.09198050000123,
+      "vram_mib": 15311.0,
+      "watts": 189.02
+    },
+    {
+      "elapsed_s": 59.3896179000003,
+      "vram_mib": 15311.0,
+      "watts": 189.06
+    },
+    {
+      "elapsed_s": 59.68580089999887,
+      "vram_mib": 15311.0,
+      "watts": 188.33
+    },
+    {
+      "elapsed_s": 59.98068799999601,
+      "vram_mib": 15311.0,
+      "watts": 192.21
+    },
+    {
+      "elapsed_s": 60.27452320000157,
+      "vram_mib": 15311.0,
+      "watts": 192.15
+    },
+    {
+      "elapsed_s": 60.574018300001626,
+      "vram_mib": 15311.0,
+      "watts": 182.16
+    },
+    {
+      "elapsed_s": 60.868967699992936,
+      "vram_mib": 15311.0,
+      "watts": 177.27
+    },
+    {
+      "elapsed_s": 61.167852899990976,
+      "vram_mib": 15311.0,
+      "watts": 165.52
+    },
+    {
+      "elapsed_s": 61.46675749999122,
+      "vram_mib": 15311.0,
+      "watts": 156.47
+    },
+    {
+      "elapsed_s": 61.766814999995404,
+      "vram_mib": 15311.0,
+      "watts": 155.25
+    },
+    {
+      "elapsed_s": 62.06564599998819,
+      "vram_mib": 15326.0,
+      "watts": 165.94
+    },
+    {
+      "elapsed_s": 62.36289299999771,
+      "vram_mib": 15326.0,
+      "watts": 180.19
+    },
+    {
+      "elapsed_s": 62.66139059999841,
+      "vram_mib": 15326.0,
+      "watts": 192.93
+    },
+    {
+      "elapsed_s": 62.95921329999692,
+      "vram_mib": 15326.0,
+      "watts": 199.65
+    },
+    {
+      "elapsed_s": 63.26893900000141,
+      "vram_mib": 15358.0,
+      "watts": 198.33
+    },
+    {
+      "elapsed_s": 63.56396780000068,
+      "vram_mib": 15358.0,
+      "watts": 178.26
+    },
+    {
+      "elapsed_s": 63.85927649999212,
+      "vram_mib": 15358.0,
+      "watts": 167.89
+    },
+    {
+      "elapsed_s": 64.15463599999202,
+      "vram_mib": 15358.0,
+      "watts": 159.7
+    },
+    {
+      "elapsed_s": 64.45122829999309,
+      "vram_mib": 15358.0,
+      "watts": 155.82
+    },
+    {
+      "elapsed_s": 64.74828980000166,
+      "vram_mib": 15358.0,
+      "watts": 163.49
+    },
+    {
+      "elapsed_s": 65.04532849999669,
+      "vram_mib": 15353.0,
+      "watts": 163.25
+    },
+    {
+      "elapsed_s": 65.34303089999594,
+      "vram_mib": 15353.0,
+      "watts": 163.26
+    },
+    {
+      "elapsed_s": 65.63943840000138,
+      "vram_mib": 15353.0,
+      "watts": 164.45
+    },
+    {
+      "elapsed_s": 65.93314609999652,
+      "vram_mib": 15353.0,
+      "watts": 153.93
+    },
+    {
+      "elapsed_s": 66.21660549999797,
+      "vram_mib": 15353.0,
+      "watts": 154.91
+    },
+    {
+      "elapsed_s": 66.51332139999431,
+      "vram_mib": 15353.0,
+      "watts": 154.67
+    },
+    {
+      "elapsed_s": 66.80965809999907,
+      "vram_mib": 15383.0,
+      "watts": 158.6
+    },
+    {
+      "elapsed_s": 67.10258120000071,
+      "vram_mib": 15383.0,
+      "watts": 162.93
+    },
+    {
+      "elapsed_s": 67.39950709999539,
+      "vram_mib": 15383.0,
+      "watts": 162.96
+    },
+    {
+      "elapsed_s": 67.69593319999694,
+      "vram_mib": 15383.0,
+      "watts": 162.63
+    },
+    {
+      "elapsed_s": 67.99262689999887,
+      "vram_mib": 15383.0,
+      "watts": 162.76
+    },
+    {
+      "elapsed_s": 68.28950410000107,
+      "vram_mib": 15406.0,
+      "watts": 153.66
+    },
+    {
+      "elapsed_s": 68.58638860000065,
+      "vram_mib": 15406.0,
+      "watts": 153.74
+    },
+    {
+      "elapsed_s": 68.88371019999613,
+      "vram_mib": 15408.0,
+      "watts": 154.62
+    },
+    {
+      "elapsed_s": 69.1674398999894,
+      "vram_mib": 15424.0,
+      "watts": 156.05
+    },
+    {
+      "elapsed_s": 69.46139440000115,
+      "vram_mib": 15424.0,
+      "watts": 163.1
+    },
+    {
+      "elapsed_s": 69.75887449999573,
+      "vram_mib": 15424.0,
+      "watts": 163.67
+    },
+    {
+      "elapsed_s": 70.05754129998968,
+      "vram_mib": 15424.0,
+      "watts": 164.74
+    },
+    {
+      "elapsed_s": 70.35755909999716,
+      "vram_mib": 15424.0,
+      "watts": 164.96
+    },
+    {
+      "elapsed_s": 70.65422529999341,
+      "vram_mib": 15424.0,
+      "watts": 155.36
+    },
+    {
+      "elapsed_s": 70.95183649999672,
+      "vram_mib": 15424.0,
+      "watts": 155.13
+    },
+    {
+      "elapsed_s": 71.24731449999672,
+      "vram_mib": 15430.0,
+      "watts": 155.53
+    },
+    {
+      "elapsed_s": 71.54257789999247,
+      "vram_mib": 15430.0,
+      "watts": 163.75
+    },
+    {
+      "elapsed_s": 71.84236239999882,
+      "vram_mib": 15430.0,
+      "watts": 175.98
+    },
+    {
+      "elapsed_s": 72.14379199998803,
+      "vram_mib": 15453.0,
+      "watts": 190.3
+    },
+    {
+      "elapsed_s": 72.43758079998952,
+      "vram_mib": 15453.0,
+      "watts": 194.29
+    },
+    {
+      "elapsed_s": 72.72287169999618,
+      "vram_mib": 15453.0,
+      "watts": 201.55
+    },
+    {
+      "elapsed_s": 73.01642049998918,
+      "vram_mib": 15476.0,
+      "watts": 176.07
+    },
+    {
+      "elapsed_s": 73.31090409999888,
+      "vram_mib": 15476.0,
+      "watts": 164.82
+    },
+    {
+      "elapsed_s": 73.6110658999969,
+      "vram_mib": 15476.0,
+      "watts": 157.24
+    },
+    {
+      "elapsed_s": 73.90832909999881,
+      "vram_mib": 15476.0,
+      "watts": 151.77
+    },
+    {
+      "elapsed_s": 74.20085839999956,
+      "vram_mib": 15480.0,
+      "watts": 151.43
+    },
+    {
+      "elapsed_s": 74.49498920000042,
+      "vram_mib": 15555.0,
+      "watts": 155.1
+    },
+    {
+      "elapsed_s": 74.7918670999934,
+      "vram_mib": 15555.0,
+      "watts": 158.97
+    },
+    {
+      "elapsed_s": 75.08513039999525,
+      "vram_mib": 15557.0,
+      "watts": 163.31
+    },
+    {
+      "elapsed_s": 75.38154959998792,
+      "vram_mib": 15557.0,
+      "watts": 162.99
+    },
+    {
+      "elapsed_s": 75.67742290000024,
+      "vram_mib": 15573.0,
+      "watts": 162.89
+    },
+    {
+      "elapsed_s": 75.97300159999577,
+      "vram_mib": 15573.0,
+      "watts": 163.05
+    },
+    {
+      "elapsed_s": 76.26643909999984,
+      "vram_mib": 15573.0,
+      "watts": 152.86
+    },
+    {
+      "elapsed_s": 76.55958129999635,
+      "vram_mib": 15573.0,
+      "watts": 152.58
+    },
+    {
+      "elapsed_s": 76.85753699998895,
+      "vram_mib": 15573.0,
+      "watts": 152.71
+    },
+    {
+      "elapsed_s": 77.15364679999766,
+      "vram_mib": 15573.0,
+      "watts": 162.41
+    },
+    {
+      "elapsed_s": 77.44989829999395,
+      "vram_mib": 15573.0,
+      "watts": 162.92
+    },
+    {
+      "elapsed_s": 77.74381390000053,
+      "vram_mib": 15573.0,
+      "watts": 163.16
+    },
+    {
+      "elapsed_s": 78.03994409998995,
+      "vram_mib": 15573.0,
+      "watts": 163.93
+    },
+    {
+      "elapsed_s": 78.33561829999962,
+      "vram_mib": 15604.0,
+      "watts": 163.93
+    },
+    {
+      "elapsed_s": 78.63375249999808,
+      "vram_mib": 15604.0,
+      "watts": 152.1
+    },
+    {
+      "elapsed_s": 78.93087949999608,
+      "vram_mib": 15604.0,
+      "watts": 151.94
+    },
+    {
+      "elapsed_s": 79.22622379999666,
+      "vram_mib": 15604.0,
+      "watts": 152.81
+    },
+    {
+      "elapsed_s": 79.51958699998795,
+      "vram_mib": 15604.0,
+      "watts": 162.53
+    },
+    {
+      "elapsed_s": 79.81264519999968,
+      "vram_mib": 15604.0,
+      "watts": 162.63
+    },
+    {
+      "elapsed_s": 80.10751289999462,
+      "vram_mib": 15604.0,
+      "watts": 162.89
+    },
+    {
+      "elapsed_s": 80.40378369999235,
+      "vram_mib": 15604.0,
+      "watts": 163.24
+    },
+    {
+      "elapsed_s": 80.70050989999436,
+      "vram_mib": 15604.0,
+      "watts": 163.8
+    },
+    {
+      "elapsed_s": 80.9927214999916,
+      "vram_mib": 15604.0,
+      "watts": 154.22
+    },
+    {
+      "elapsed_s": 81.28816329999245,
+      "vram_mib": 15604.0,
+      "watts": 152.74
+    },
+    {
+      "elapsed_s": 81.58368849998806,
+      "vram_mib": 15604.0,
+      "watts": 153.63
+    },
+    {
+      "elapsed_s": 81.8803426999948,
+      "vram_mib": 15604.0,
+      "watts": 163.12
+    },
+    {
+      "elapsed_s": 82.17769509999198,
+      "vram_mib": 15604.0,
+      "watts": 162.6
+    },
+    {
+      "elapsed_s": 82.47203319999971,
+      "vram_mib": 15604.0,
+      "watts": 162.81
+    },
+    {
+      "elapsed_s": 82.76385339999979,
+      "vram_mib": 15617.0,
+      "watts": 163.05
+    },
+    {
+      "elapsed_s": 83.05703589999757,
+      "vram_mib": 15617.0,
+      "watts": 158.14
+    },
+    {
+      "elapsed_s": 83.35452959999384,
+      "vram_mib": 15617.0,
+      "watts": 154.27
+    },
+    {
+      "elapsed_s": 83.65081039999495,
+      "vram_mib": 15617.0,
+      "watts": 153.9
+    },
+    {
+      "elapsed_s": 83.94791599999007,
+      "vram_mib": 15617.0,
+      "watts": 153.83
+    },
+    {
+      "elapsed_s": 84.24024199999985,
+      "vram_mib": 15636.0,
+      "watts": 154.43
+    },
+    {
+      "elapsed_s": 84.53804279999167,
+      "vram_mib": 15658.0,
+      "watts": 162.97
+    },
+    {
+      "elapsed_s": 84.82968739999342,
+      "vram_mib": 15658.0,
+      "watts": 162.94
+    },
+    {
+      "elapsed_s": 85.126133999991,
+      "vram_mib": 15658.0,
+      "watts": 163.15
+    },
+    {
+      "elapsed_s": 85.42021109999041,
+      "vram_mib": 15658.0,
+      "watts": 163.41
+    },
+    {
+      "elapsed_s": 85.71446289999585,
+      "vram_mib": 15658.0,
+      "watts": 152.7
+    },
+    {
+      "elapsed_s": 86.00961429999734,
+      "vram_mib": 15661.0,
+      "watts": 152.51
+    },
+    {
+      "elapsed_s": 86.30506949999835,
+      "vram_mib": 15661.0,
+      "watts": 151.7
+    },
+    {
+      "elapsed_s": 86.59930899999745,
+      "vram_mib": 15661.0,
+      "watts": 162.9
+    },
+    {
+      "elapsed_s": 86.89569219999248,
+      "vram_mib": 15661.0,
+      "watts": 163.05
+    },
+    {
+      "elapsed_s": 87.18592889999854,
+      "vram_mib": 15661.0,
+      "watts": 163.35
+    },
+    {
+      "elapsed_s": 87.48338399999193,
+      "vram_mib": 15661.0,
+      "watts": 163.47
+    },
+    {
+      "elapsed_s": 87.77685399999609,
+      "vram_mib": 15661.0,
+      "watts": 153.98
+    },
+    {
+      "elapsed_s": 88.07163479999872,
+      "vram_mib": 15663.0,
+      "watts": 153.01
+    },
+    {
+      "elapsed_s": 88.36749920000148,
+      "vram_mib": 15663.0,
+      "watts": 152.86
+    },
+    {
+      "elapsed_s": 88.68060569999216,
+      "vram_mib": 15663.0,
+      "watts": 153.47
+    },
+    {
+      "elapsed_s": 88.99127809998754,
+      "vram_mib": 15663.0,
+      "watts": 154.74
+    },
+    {
+      "elapsed_s": 89.28426909999689,
+      "vram_mib": 15663.0,
+      "watts": 161.42
+    },
+    {
+      "elapsed_s": 89.58208269999886,
+      "vram_mib": 15414.0,
+      "watts": 161.43
+    },
+    {
+      "elapsed_s": 89.87479370000074,
+      "vram_mib": 15414.0,
+      "watts": 161.76
+    },
+    {
+      "elapsed_s": 90.17421369999647,
+      "vram_mib": 15414.0,
+      "watts": 158.57
+    },
+    {
+      "elapsed_s": 90.46578829998907,
+      "vram_mib": 15414.0,
+      "watts": 153.16
+    },
+    {
+      "elapsed_s": 90.75854709999112,
+      "vram_mib": 15414.0,
+      "watts": 148.16
+    },
+    {
+      "elapsed_s": 91.05541429998993,
+      "vram_mib": 15415.0,
+      "watts": 152.97
+    },
+    {
+      "elapsed_s": 91.35188170000038,
+      "vram_mib": 15415.0,
+      "watts": 151.99
+    },
+    {
+      "elapsed_s": 91.64307140000165,
+      "vram_mib": 15415.0,
+      "watts": 150.24
+    },
+    {
+      "elapsed_s": 91.94123849998869,
+      "vram_mib": 15415.0,
+      "watts": 151.88
+    },
+    {
+      "elapsed_s": 92.23845920000167,
+      "vram_mib": 15416.0,
+      "watts": 154.85
+    },
+    {
+      "elapsed_s": 92.5356987999985,
+      "vram_mib": 15416.0,
+      "watts": 162.72
+    },
+    {
+      "elapsed_s": 92.82933929999126,
+      "vram_mib": 15416.0,
+      "watts": 161.85
+    },
+    {
+      "elapsed_s": 93.12279559999297,
+      "vram_mib": 15507.0,
+      "watts": 161.87
+    },
+    {
+      "elapsed_s": 93.41870499998913,
+      "vram_mib": 15507.0,
+      "watts": 161.73
+    },
+    {
+      "elapsed_s": 93.71439699998882,
+      "vram_mib": 15507.0,
+      "watts": 157.8
+    },
+    {
+      "elapsed_s": 94.00884409999708,
+      "vram_mib": 15507.0,
+      "watts": 156.94
+    },
+    {
+      "elapsed_s": 94.30475060000026,
+      "vram_mib": 15507.0,
+      "watts": 167.9
+    },
+    {
+      "elapsed_s": 94.59810069999367,
+      "vram_mib": 15507.0,
+      "watts": 185.39
+    },
+    {
+      "elapsed_s": 94.89690969999356,
+      "vram_mib": 15507.0,
+      "watts": 195.91
+    },
+    {
+      "elapsed_s": 95.19101199999568,
+      "vram_mib": 15507.0,
+      "watts": 202.14
+    },
+    {
+      "elapsed_s": 95.48572240000067,
+      "vram_mib": 15507.0,
+      "watts": 193.43
+    },
+    {
+      "elapsed_s": 95.79568779999681,
+      "vram_mib": 15507.0,
+      "watts": 173.27
+    },
+    {
+      "elapsed_s": 96.08722249999119,
+      "vram_mib": 15507.0,
+      "watts": 151.96
+    },
+    {
+      "elapsed_s": 96.38016399998742,
+      "vram_mib": 15507.0,
+      "watts": 150.63
+    },
+    {
+      "elapsed_s": 96.67502039999817,
+      "vram_mib": 15507.0,
+      "watts": 148.23
+    },
+    {
+      "elapsed_s": 96.97068739999668,
+      "vram_mib": 15519.0,
+      "watts": 147.74
+    },
+    {
+      "elapsed_s": 97.26730559999123,
+      "vram_mib": 15520.0,
+      "watts": 173.5
+    },
+    {
+      "elapsed_s": 97.55990349999047,
+      "vram_mib": 15520.0,
+      "watts": 184.96
+    },
+    {
+      "elapsed_s": 97.85653439999442,
+      "vram_mib": 15520.0,
+      "watts": 188.74
+    },
+    {
+      "elapsed_s": 98.15270599999349,
+      "vram_mib": 15520.0,
+      "watts": 196.57
+    },
+    {
+      "elapsed_s": 98.4479003999877,
+      "vram_mib": 15516.0,
+      "watts": 187.02
+    },
+    {
+      "elapsed_s": 98.74262029999227,
+      "vram_mib": 15516.0,
+      "watts": 168.68
+    },
+    {
+      "elapsed_s": 99.03840499999933,
+      "vram_mib": 15516.0,
+      "watts": 156.37
+    },
+    {
+      "elapsed_s": 99.3357837999938,
+      "vram_mib": 15510.0,
+      "watts": 155.6
+    },
+    {
+      "elapsed_s": 99.63479820000066,
+      "vram_mib": 15510.0,
+      "watts": 162.95
+    },
+    {
+      "elapsed_s": 99.92908950000128,
+      "vram_mib": 15510.0,
+      "watts": 163.05
+    },
+    {
+      "elapsed_s": 100.22556799999438,
+      "vram_mib": 15510.0,
+      "watts": 162.9
+    },
+    {
+      "elapsed_s": 100.535813399998,
+      "vram_mib": 15491.0,
+      "watts": 163.61
+    },
+    {
+      "elapsed_s": 100.8316996999929,
+      "vram_mib": 15491.0,
+      "watts": 152.19
+    },
+    {
+      "elapsed_s": 101.14088549998996,
+      "vram_mib": 15491.0,
+      "watts": 152.23
+    },
+    {
+      "elapsed_s": 101.434955299992,
+      "vram_mib": 15491.0,
+      "watts": 152.26
+    },
+    {
+      "elapsed_s": 101.7287886999984,
+      "vram_mib": 15491.0,
+      "watts": 152.3
+    },
+    {
+      "elapsed_s": 102.0216531999904,
+      "vram_mib": 15484.0,
+      "watts": 162.64
+    },
+    {
+      "elapsed_s": 102.31459059999906,
+      "vram_mib": 15484.0,
+      "watts": 162.6
+    },
+    {
+      "elapsed_s": 102.61304089998885,
+      "vram_mib": 15484.0,
+      "watts": 162.7
+    },
+    {
+      "elapsed_s": 102.9089796999906,
+      "vram_mib": 15484.0,
+      "watts": 162.79
+    },
+    {
+      "elapsed_s": 103.20418969998718,
+      "vram_mib": 15482.0,
+      "watts": 152.86
+    },
+    {
+      "elapsed_s": 103.50229489999765,
+      "vram_mib": 15482.0,
+      "watts": 151.84
+    },
+    {
+      "elapsed_s": 103.800679699998,
+      "vram_mib": 15482.0,
+      "watts": 152.39
+    },
+    {
+      "elapsed_s": 104.09347789999447,
+      "vram_mib": 15482.0,
+      "watts": 154.74
+    },
+    {
+      "elapsed_s": 104.38811299999361,
+      "vram_mib": 15482.0,
+      "watts": 161.04
+    },
+    {
+      "elapsed_s": 104.68476509999891,
+      "vram_mib": 15482.0,
+      "watts": 161.18
+    },
+    {
+      "elapsed_s": 104.97901659998752,
+      "vram_mib": 15482.0,
+      "watts": 161.2
+    },
+    {
+      "elapsed_s": 105.27210819999164,
+      "vram_mib": 15482.0,
+      "watts": 163.24
+    },
+    {
+      "elapsed_s": 105.56848339999851,
+      "vram_mib": 15482.0,
+      "watts": 153.3
+    },
+    {
+      "elapsed_s": 105.86283719999483,
+      "vram_mib": 15482.0,
+      "watts": 152.42
+    },
+    {
+      "elapsed_s": 106.15885479999997,
+      "vram_mib": 15482.0,
+      "watts": 151.86
+    },
+    {
+      "elapsed_s": 106.45171809999738,
+      "vram_mib": 15482.0,
+      "watts": 153.02
+    },
+    {
+      "elapsed_s": 106.74764849999337,
+      "vram_mib": 15482.0,
+      "watts": 162.24
+    },
+    {
+      "elapsed_s": 107.04571099999885,
+      "vram_mib": 15482.0,
+      "watts": 162.79
+    },
+    {
+      "elapsed_s": 107.34137889998965,
+      "vram_mib": 15482.0,
+      "watts": 162.82
+    },
+    {
+      "elapsed_s": 107.64967519999482,
+      "vram_mib": 15482.0,
+      "watts": 163.37
+    },
+    {
+      "elapsed_s": 107.9444114999933,
+      "vram_mib": 15482.0,
+      "watts": 152.36
+    },
+    {
+      "elapsed_s": 108.23551089999091,
+      "vram_mib": 15482.0,
+      "watts": 151.58
+    },
+    {
+      "elapsed_s": 108.5321438999963,
+      "vram_mib": 15482.0,
+      "watts": 152.05
+    },
+    {
+      "elapsed_s": 108.8255719000008,
+      "vram_mib": 15519.0,
+      "watts": 155.04
+    },
+    {
+      "elapsed_s": 109.18523940000159,
+      "vram_mib": 15516.0,
+      "watts": 161.65
+    },
+    {
+      "elapsed_s": 109.47989659999439,
+      "vram_mib": 15494.0,
+      "watts": 167.81
+    },
+    {
+      "elapsed_s": 109.77835019999475,
+      "vram_mib": 15496.0,
+      "watts": 183.89
+    },
+    {
+      "elapsed_s": 110.07459279999603,
+      "vram_mib": 15500.0,
+      "watts": 189.69
+    },
+    {
+      "elapsed_s": 110.36896649999835,
+      "vram_mib": 15500.0,
+      "watts": 186.65
+    },
+    {
+      "elapsed_s": 110.68293109998922,
+      "vram_mib": 15500.0,
+      "watts": 186.14
+    },
+    {
+      "elapsed_s": 110.9805495999899,
+      "vram_mib": 15500.0,
+      "watts": 182.03
+    },
+    {
+      "elapsed_s": 111.27195009999559,
+      "vram_mib": 15500.0,
+      "watts": 185.44
+    },
+    {
+      "elapsed_s": 111.5819477999903,
+      "vram_mib": 15516.0,
+      "watts": 186.13
+    },
+    {
+      "elapsed_s": 111.89524449998862,
+      "vram_mib": 15507.0,
+      "watts": 186.54
+    },
+    {
+      "elapsed_s": 112.20647209999152,
+      "vram_mib": 15236.0,
+      "watts": 193.33
+    },
+    {
+      "elapsed_s": 112.49678449999192,
+      "vram_mib": 15236.0,
+      "watts": 196.36
+    },
+    {
+      "elapsed_s": 112.79189599999518,
+      "vram_mib": 14935.0,
+      "watts": 185.41
+    },
+    {
+      "elapsed_s": 113.08718889999727,
+      "vram_mib": 14935.0,
+      "watts": 185.07
+    },
+    {
+      "elapsed_s": 113.40147449998767,
+      "vram_mib": 15231.0,
+      "watts": 184.41
+    },
+    {
+      "elapsed_s": 113.69298769999295,
+      "vram_mib": 15325.0,
+      "watts": 185.91
+    },
+    {
+      "elapsed_s": 113.98604569998861,
+      "vram_mib": 15326.0,
+      "watts": 190.73
+    },
+    {
+      "elapsed_s": 114.28100049999193,
+      "vram_mib": 15344.0,
+      "watts": 192.53
+    },
+    {
+      "elapsed_s": 114.57783599999675,
+      "vram_mib": 15258.0,
+      "watts": 194.88
+    },
+    {
+      "elapsed_s": 114.87446259999706,
+      "vram_mib": 15258.0,
+      "watts": 195.89
+    },
+    {
+      "elapsed_s": 115.18428889999632,
+      "vram_mib": 15383.0,
+      "watts": 171.53
+    },
+    {
+      "elapsed_s": 115.47560019999219,
+      "vram_mib": 15613.0,
+      "watts": 164.42
+    },
+    {
+      "elapsed_s": 115.77328889998898,
+      "vram_mib": 15612.0,
+      "watts": 142.31
+    },
+    {
+      "elapsed_s": 116.06585529999575,
+      "vram_mib": 15559.0,
+      "watts": 142.78
+    },
+    {
+      "elapsed_s": 116.36225679999916,
+      "vram_mib": 15501.0,
+      "watts": 145.41
+    },
+    {
+      "elapsed_s": 116.67211829998996,
+      "vram_mib": 15506.0,
+      "watts": 146.32
+    },
+    {
+      "elapsed_s": 116.97024419999798,
+      "vram_mib": 15507.0,
+      "watts": 146.04
+    },
+    {
+      "elapsed_s": 117.26350339999772,
+      "vram_mib": 15501.0,
+      "watts": 147.54
+    },
+    {
+      "elapsed_s": 117.55710449999606,
+      "vram_mib": 15509.0,
+      "watts": 147.87
+    },
+    {
+      "elapsed_s": 117.87004529999103,
+      "vram_mib": 15509.0,
+      "watts": 148.61
+    },
+    {
+      "elapsed_s": 118.18625719999545,
+      "vram_mib": 15543.0,
+      "watts": 145.97
+    },
+    {
+      "elapsed_s": 118.48179399999208,
+      "vram_mib": 15310.0,
+      "watts": 145.18
+    },
+    {
+      "elapsed_s": 118.77362089999951,
+      "vram_mib": 15255.0,
+      "watts": 141.11
+    },
+    {
+      "elapsed_s": 119.07498569999007,
+      "vram_mib": 15255.0,
+      "watts": 136.18
+    },
+    {
+      "elapsed_s": 119.38261289999355,
+      "vram_mib": 15095.0,
+      "watts": 133.29
+    },
+    {
+      "elapsed_s": 119.70881029999873,
+      "vram_mib": 15097.0,
+      "watts": 127.75
+    },
+    {
+      "elapsed_s": 120.01830289998907,
+      "vram_mib": 15019.0,
+      "watts": 122.03
+    },
+    {
+      "elapsed_s": 120.32682789998944,
+      "vram_mib": 14980.0,
+      "watts": 121.18
+    },
+    {
+      "elapsed_s": 120.62198219999846,
+      "vram_mib": 14980.0,
+      "watts": 118.08
+    },
+    {
+      "elapsed_s": 120.91493959999934,
+      "vram_mib": 14934.0,
+      "watts": 119.21
+    },
+    {
+      "elapsed_s": 121.2101127999922,
+      "vram_mib": 14922.0,
+      "watts": 120.9
+    },
+    {
+      "elapsed_s": 121.51378660000046,
+      "vram_mib": 14925.0,
+      "watts": 121.11
+    },
+    {
+      "elapsed_s": 121.83052619999216,
+      "vram_mib": 14925.0,
+      "watts": 120.71
+    },
+    {
+      "elapsed_s": 122.14606259998982,
+      "vram_mib": 14925.0,
+      "watts": 113.32
+    },
+    {
+      "elapsed_s": 122.43839129999105,
+      "vram_mib": 14922.0,
+      "watts": 113.46
+    },
+    {
+      "elapsed_s": 122.75265260000015,
+      "vram_mib": 14917.0,
+      "watts": 112.52
+    },
+    {
+      "elapsed_s": 123.04250279998814,
+      "vram_mib": 14914.0,
+      "watts": 113.02
+    },
+    {
+      "elapsed_s": 123.334380100001,
+      "vram_mib": 14906.0,
+      "watts": 122.26
+    },
+    {
+      "elapsed_s": 123.6330186999985,
+      "vram_mib": 14906.0,
+      "watts": 133.4
+    },
+    {
+      "elapsed_s": 123.92762059999222,
+      "vram_mib": 14907.0,
+      "watts": 143.95
+    },
+    {
+      "elapsed_s": 124.2240962999931,
+      "vram_mib": 14907.0,
+      "watts": 157.51
+    },
+    {
+      "elapsed_s": 124.52083449999918,
+      "vram_mib": 14906.0,
+      "watts": 159.46
+    },
+    {
+      "elapsed_s": 124.8160918999929,
+      "vram_mib": 14906.0,
+      "watts": 171.04
+    },
+    {
+      "elapsed_s": 125.10820249999233,
+      "vram_mib": 14905.0,
+      "watts": 187.65
+    },
+    {
+      "elapsed_s": 125.40518950000114,
+      "vram_mib": 14920.0,
+      "watts": 180.78
+    },
+    {
+      "elapsed_s": 125.70036109999637,
+      "vram_mib": 14907.0,
+      "watts": 180.03
+    },
+    {
+      "elapsed_s": 125.9929201999912,
+      "vram_mib": 14876.0,
+      "watts": 172.64
+    },
+    {
+      "elapsed_s": 126.28981689999637,
+      "vram_mib": 14874.0,
+      "watts": 183.65
+    },
+    {
+      "elapsed_s": 126.58429869999236,
+      "vram_mib": 14883.0,
+      "watts": 197.12
+    },
+    {
+      "elapsed_s": 126.88015109999105,
+      "vram_mib": 14881.0,
+      "watts": 201.5
+    },
+    {
+      "elapsed_s": 127.17512509999506,
+      "vram_mib": 14888.0,
+      "watts": 193.6
+    },
+    {
+      "elapsed_s": 127.4858860999957,
+      "vram_mib": 14889.0,
+      "watts": 186.45
+    },
+    {
+      "elapsed_s": 127.78347339999164,
+      "vram_mib": 14891.0,
+      "watts": 158.55
+    },
+    {
+      "elapsed_s": 128.0823468000017,
+      "vram_mib": 14891.0,
+      "watts": 152.09
+    },
+    {
+      "elapsed_s": 128.37692830000015,
+      "vram_mib": 14890.0,
+      "watts": 149.14
+    },
+    {
+      "elapsed_s": 128.67015929998888,
+      "vram_mib": 14925.0,
+      "watts": 148.72
+    },
+    {
+      "elapsed_s": 128.96583619999,
+      "vram_mib": 14925.0,
+      "watts": 170.23
+    },
+    {
+      "elapsed_s": 129.27487599999586,
+      "vram_mib": 14922.0,
+      "watts": 191.03
+    },
+    {
+      "elapsed_s": 129.57617829999072,
+      "vram_mib": 14935.0,
+      "watts": 194.89
+    },
+    {
+      "elapsed_s": 129.87023019998742,
+      "vram_mib": 14935.0,
+      "watts": 195.98
+    },
+    {
+      "elapsed_s": 130.16881089999515,
+      "vram_mib": 14933.0,
+      "watts": 186.14
+    },
+    {
+      "elapsed_s": 130.4747567000013,
+      "vram_mib": 14906.0,
+      "watts": 186.63
+    },
+    {
+      "elapsed_s": 130.80069819999335,
+      "vram_mib": 15141.0,
+      "watts": 185.66
+    },
+    {
+      "elapsed_s": 131.15562499999942,
+      "vram_mib": 15196.0,
+      "watts": 193.59
+    },
+    {
+      "elapsed_s": 131.49881299999834,
+      "vram_mib": 15262.0,
+      "watts": 162.77
+    },
+    {
+      "elapsed_s": 131.81434749999607,
+      "vram_mib": 15262.0,
+      "watts": 87.8
+    },
+    {
+      "elapsed_s": 132.328050600001,
+      "vram_mib": 15290.0,
+      "watts": 71.74
+    },
+    {
+      "elapsed_s": 132.81746579999162,
+      "vram_mib": 15297.0,
+      "watts": 63.38
+    },
+    {
+      "elapsed_s": 133.133594599989,
+      "vram_mib": 15316.0,
+      "watts": 127.15
+    },
+    {
+      "elapsed_s": 133.45305729999382,
+      "vram_mib": 15371.0,
+      "watts": 153.51
+    },
+    {
+      "elapsed_s": 133.785220699996,
+      "vram_mib": 15369.0,
+      "watts": 167.35
+    },
+    {
+      "elapsed_s": 134.89853479999874,
+      "vram_mib": 15372.0,
+      "watts": 105.25
+    },
+    {
+      "elapsed_s": 135.21533890000137,
+      "vram_mib": 15398.0,
+      "watts": 49.39
+    },
+    {
+      "elapsed_s": 135.5123872999975,
+      "vram_mib": 15398.0,
+      "watts": 67.91
+    },
+    {
+      "elapsed_s": 135.80450139999448,
+      "vram_mib": 15395.0,
+      "watts": 117.47
+    },
+    {
+      "elapsed_s": 136.42883150000125,
+      "vram_mib": 15395.0,
+      "watts": 140.94
+    },
+    {
+      "elapsed_s": 136.75495959998807,
+      "vram_mib": 15395.0,
+      "watts": 118.46
+    },
+    {
+      "elapsed_s": 137.0960919999925,
+      "vram_mib": 15395.0,
+      "watts": 66.93
+    },
+    {
+      "elapsed_s": 137.4555551999947,
+      "vram_mib": 15388.0,
+      "watts": 41.14
+    },
+    {
+      "elapsed_s": 138.37829829999828,
+      "vram_mib": 15388.0,
+      "watts": 40.39
+    },
+    {
+      "elapsed_s": 138.69352539999818,
+      "vram_mib": 15400.0,
+      "watts": 43.4
+    },
+    {
+      "elapsed_s": 138.98771519999718,
+      "vram_mib": 15400.0,
+      "watts": 61.54
+    },
+    {
+      "elapsed_s": 139.29889909998747,
+      "vram_mib": 15398.0,
+      "watts": 116.3
+    },
+    {
+      "elapsed_s": 139.9828223999939,
+      "vram_mib": 15334.0,
+      "watts": 137.65
+    },
+    {
+      "elapsed_s": 140.3390275999991,
+      "vram_mib": 15396.0,
+      "watts": 76.41
+    },
+    {
+      "elapsed_s": 140.68199489999097,
+      "vram_mib": 15396.0,
+      "watts": 62.87
+    },
+    {
+      "elapsed_s": 141.0207337999891,
+      "vram_mib": 15393.0,
+      "watts": 42.94
+    },
+    {
+      "elapsed_s": 142.5596196999977,
+      "vram_mib": 15395.0,
+      "watts": 41.93
+    },
+    {
+      "elapsed_s": 142.84996319998754,
+      "vram_mib": 15409.0,
+      "watts": 47.84
+    },
+    {
+      "elapsed_s": 143.14337639999576,
+      "vram_mib": 15409.0,
+      "watts": 63.44
+    },
+    {
+      "elapsed_s": 143.44026009998925,
+      "vram_mib": 15408.0,
+      "watts": 92.01
+    },
+    {
+      "elapsed_s": 144.3319485999964,
+      "vram_mib": 15408.0,
+      "watts": 112.39
+    },
+    {
+      "elapsed_s": 144.64914259999932,
+      "vram_mib": 15393.0,
+      "watts": 59.61
+    },
+    {
+      "elapsed_s": 144.98505540000042,
+      "vram_mib": 15358.0,
+      "watts": 44.28
+    },
+    {
+      "elapsed_s": 145.31195959998877,
+      "vram_mib": 15294.0,
+      "watts": 42.09
+    },
+    {
+      "elapsed_s": 147.02317069999117,
+      "vram_mib": 15271.0,
+      "watts": 41.47
+    },
+    {
+      "elapsed_s": 147.33088839999982,
+      "vram_mib": 15260.0,
+      "watts": 58.67
+    },
+    {
+      "elapsed_s": 147.63367460000154,
+      "vram_mib": 15260.0,
+      "watts": 69.83
+    },
+    {
+      "elapsed_s": 147.92350199999055,
+      "vram_mib": 15260.0,
+      "watts": 98.76
+    },
+    {
+      "elapsed_s": 148.95806349998747,
+      "vram_mib": 15260.0,
+      "watts": 126.76
+    },
+    {
+      "elapsed_s": 149.27491759999248,
+      "vram_mib": 15328.0,
+      "watts": 47.41
+    },
+    {
+      "elapsed_s": 149.5718549000012,
+      "vram_mib": 15328.0,
+      "watts": 58.42
+    },
+    {
+      "elapsed_s": 149.86845489998814,
+      "vram_mib": 11087.0,
+      "watts": 69.29
+    },
+    {
+      "elapsed_s": 150.4699599000014,
+      "vram_mib": 10005.0,
+      "watts": 67.92
+    },
+    {
+      "elapsed_s": 150.77295529999537,
+      "vram_mib": 7861.0,
+      "watts": 68.52
+    },
+    {
+      "elapsed_s": 151.06752620000043,
+      "vram_mib": 7794.0,
+      "watts": 85.51
+    },
+    {
+      "elapsed_s": 151.36220540000068,
+      "vram_mib": 7794.0,
+      "watts": 122.01
+    },
+    {
+      "elapsed_s": 151.65861679999216,
+      "vram_mib": 7794.0,
+      "watts": 134.78
+    },
+    {
+      "elapsed_s": 151.95446759999322,
+      "vram_mib": 7794.0,
+      "watts": 145.76
+    }
+  ]
+}

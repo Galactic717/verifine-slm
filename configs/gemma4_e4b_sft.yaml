@@ -1,0 +1,8 @@
+model: google/gemma-4-E4B-it
+revision: 4ecc2ba63bcac23ba4a767fc87025b1450f84c9c
+architecture: gemma4
+output: artifacts/gemma-sft
+max_steps: 150
+learning_rate: 0.0001
+gradient_accumulation: 4
+max_length: 1024

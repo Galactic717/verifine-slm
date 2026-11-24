@@ -1,0 +1,17 @@
+services:
+  sglang:
+    image: ${SGLANG_IMAGE:-lmsysorg/sglang:v0.5.9}
+    gpus: all
+    ipc: host
+    environment:
+      HF_HUB_OFFLINE: "1"
+      HF_HUB_DISABLE_TELEMETRY: "1"
+    volumes:
+      - type: bind
+        source: ${VERIFINE_MODEL_DIR:?Path to merged local Safetensors}
+        target: /model
+        read_only: true
+    ports: ["127.0.0.1:8092:30000"]
+    command: ["python3", "-m", "sglang.launch_server", "--model-path", "/model",
+              "--served-model-name", "verifine", "--context-length", "2048",
+              "--mem-fraction-static", "0.80", "--host", "0.0.0.0", "--port", "30000"]

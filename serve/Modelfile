@@ -1,0 +1,4 @@
+FROM /weights/verifine-qwen-Q4_K_M.gguf
+PARAMETER num_ctx 2048
+PARAMETER temperature 0
+PARAMETER num_predict 240
