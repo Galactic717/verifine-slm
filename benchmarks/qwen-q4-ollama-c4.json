@@ -1,0 +1,856 @@
+{
+  "model": "verifine",
+  "backend": "ollama",
+  "count": 48,
+  "warmup": 8,
+  "concurrency": 4,
+  "constrained": true,
+  "max_tokens": 240,
+  "seed": 42,
+  "dataset_sha256": "ff0a319f5d2141d0e85100de10edff6f44258c1681894ad5c5af7ecf4bc2a808",
+  "summary": {
+    "successful": 48,
+    "errors": 0,
+    "wall_s": 11.405213999998523,
+    "requests_per_s": 4.208601434397129,
+    "schema_valid_requests_per_s": 4.120922237847188,
+    "length_limited": 0,
+    "output_tokens_per_s": 163.25866397598864,
+    "peak_board_vram_mib": 13387.0,
+    "board_power_sample_mean_w": 80.74435897435897,
+    "electricity_usd_per_kwh_assumption": 0.15,
+    "gpu_electricity_usd_per_million_total_tokens": 0.0018261523046260576,
+    "gpu_electricity_usd_per_million_requests": 0.7993981713500568,
+    "ttft_ms_p50": 116.6084999931627,
+    "ttft_ms_p95": 3208.113415002299,
+    "answer_ttft_ms_p50": 116.6084999931627,
+    "answer_ttft_ms_p95": 3208.113415002299,
+    "tpot_ms_p50": 13.861650000180816,
+    "tpot_ms_p95": 19.209572282885155,
+    "elapsed_ms_p50": 773.974999996426,
+    "elapsed_ms_p95": 3659.445094993862
+  },
+  "requests": [
+    {
+      "id": "invoice-go0008",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 3880.575300005148,
+      "ttft_ms": 3209.6378999995068,
+      "tpot_ms": 13.113152000005357,
+      "prompt_tokens": 448,
+      "completion_tokens": 51,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 3209.6378999995068,
+      "confidence": null
+    },
+    {
+      "id": "invoice-go0009",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 3865.940199990291,
+      "ttft_ms": 3209.3514000007417,
+      "tpot_ms": 13.25977346931147,
+      "prompt_tokens": 409,
+      "completion_tokens": 50,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 3209.3514000007417,
+      "confidence": null
+    },
+    {
+      "id": "clinical-go0010",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 3711.9395999907283,
+      "ttft_ms": 3208.403600001475,
+      "tpot_ms": 11.806461904641418,
+      "prompt_tokens": 390,
+      "completion_tokens": 43,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 3208.403600001475,
+      "confidence": null
+    },
+    {
+      "id": "clinical-go0011",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 3561.9552999996813,
+      "ttft_ms": 3207.5745000038296,
+      "tpot_ms": 10.201799999990994,
+      "prompt_tokens": 355,
+      "completion_tokens": 35,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 3207.5745000038296,
+      "confidence": null
+    },
+    {
+      "id": "contract-go0012",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 980.4026000056183,
+      "ttft_ms": 100.09459999855608,
+      "tpot_ms": 18.2199425533404,
+      "prompt_tokens": 426,
+      "completion_tokens": 48,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 100.09459999855608,
+      "confidence": null
+    },
+    {
+      "id": "contract-go0013",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 808.6792999965837,
+      "ttft_ms": 110.38459998962935,
+      "tpot_ms": 18.155976315794856,
+      "prompt_tokens": 375,
+      "completion_tokens": 39,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 110.38459998962935,
+      "confidence": null
+    },
+    {
+      "id": "support-go0014",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 325.0126999919303,
+      "ttft_ms": 169.8937999899499,
+      "tpot_ms": 9.20933750057884,
+      "prompt_tokens": 384,
+      "completion_tokens": 17,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 169.8937999899499,
+      "confidence": null
+    },
+    {
+      "id": "support-go0015",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 498.23330000799615,
+      "ttft_ms": 157.09160000551492,
+      "tpot_ms": 14.458260869698437,
+      "prompt_tokens": 348,
+      "completion_tokens": 24,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 157.09160000551492,
+      "confidence": null
+    },
+    {
+      "id": "invoice-go0016",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 962.7489999984391,
+      "ttft_ms": 117.96390000381507,
+      "tpot_ms": 15.141905999917071,
+      "prompt_tokens": 462,
+      "completion_tokens": 51,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 117.96390000381507,
+      "confidence": null
+    },
+    {
+      "id": "invoice-go0017",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 937.5789999903645,
+      "ttft_ms": 77.16689999506343,
+      "tpot_ms": 16.673698039227805,
+      "prompt_tokens": 424,
+      "completion_tokens": 52,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 77.16689999506343,
+      "confidence": null
+    },
+    {
+      "id": "clinical-go0018",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 515.798000007635,
+      "ttft_ms": 152.80000001075678,
+      "tpot_ms": 10.451688235180507,
+      "prompt_tokens": 407,
+      "completion_tokens": 35,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 152.80000001075678,
+      "confidence": null
+    },
+    {
+      "id": "clinical-go0019",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 336.69120000558905,
+      "ttft_ms": 130.75369999569375,
+      "tpot_ms": 7.587446153942997,
+      "prompt_tokens": 351,
+      "completion_tokens": 27,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 130.75369999569375,
+      "confidence": null
+    },
+    {
+      "id": "contract-go0020",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 1040.4477000120096,
+      "ttft_ms": 106.89460000139661,
+      "tpot_ms": 19.817763043608032,
+      "prompt_tokens": 423,
+      "completion_tokens": 47,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 106.89460000139661,
+      "confidence": null
+    },
+    {
+      "id": "contract-go0021",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 748.3303000044543,
+      "ttft_ms": 115.79749999509659,
+      "tpot_ms": 16.08830285715937,
+      "prompt_tokens": 377,
+      "completion_tokens": 36,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 115.79749999509659,
+      "confidence": null
+    },
+    {
+      "id": "support-go0022",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 395.9324000024935,
+      "ttft_ms": 92.13309999904595,
+      "tpot_ms": 12.872791304328965,
+      "prompt_tokens": 392,
+      "completion_tokens": 24,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 92.13309999904595,
+      "confidence": null
+    },
+    {
+      "id": "support-go0023",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 388.7435000069672,
+      "ttft_ms": 92.32559999509249,
+      "tpot_ms": 12.522060870137269,
+      "prompt_tokens": 354,
+      "completion_tokens": 24,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 92.32559999509249,
+      "confidence": null
+    },
+    {
+      "id": "invoice-go0024",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 771.3225000043167,
+      "ttft_ms": 82.90759999363218,
+      "tpot_ms": 13.618918000138365,
+      "prompt_tokens": 458,
+      "completion_tokens": 51,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 82.90759999363218,
+      "confidence": null
+    },
+    {
+      "id": "invoice-go0025",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 837.9009000054793,
+      "ttft_ms": 81.72430000558961,
+      "tpot_ms": 15.256348979535836,
+      "prompt_tokens": 415,
+      "completion_tokens": 50,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 81.72430000558961,
+      "confidence": null
+    },
+    {
+      "id": "clinical-go0026",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 777.0974000013666,
+      "ttft_ms": 112.85019999195356,
+      "tpot_ms": 13.344853061277476,
+      "prompt_tokens": 425,
+      "completion_tokens": 50,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 112.85019999195356,
+      "confidence": null
+    },
+    {
+      "id": "clinical-go0027",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 416.0820000106469,
+      "ttft_ms": 104.29100001056213,
+      "tpot_ms": 7.921628947339118,
+      "prompt_tokens": 373,
+      "completion_tokens": 39,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 104.29100001056213,
+      "confidence": null
+    },
+    {
+      "id": "contract-go0028",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 1037.707399998908,
+      "ttft_ms": 181.4237999933539,
+      "tpot_ms": 16.980905999953393,
+      "prompt_tokens": 448,
+      "completion_tokens": 51,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 181.4237999933539,
+      "confidence": null
+    },
+    {
+      "id": "contract-go0029",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 869.5956000010483,
+      "ttft_ms": 169.07459999492858,
+      "tpot_ms": 17.325424999944516,
+      "prompt_tokens": 384,
+      "completion_tokens": 41,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 169.07459999492858,
+      "confidence": null
+    },
+    {
+      "id": "support-go0030",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 394.7950000001583,
+      "ttft_ms": 156.89179999753833,
+      "tpot_ms": 9.771430435332308,
+      "prompt_tokens": 383,
+      "completion_tokens": 24,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 156.89179999753833,
+      "confidence": null
+    },
+    {
+      "id": "support-go0031",
+      "error": null,
+      "schema_valid": false,
+      "elapsed_ms": 372.1265000058338,
+      "ttft_ms": 144.8337000038009,
+      "tpot_ms": 9.933799999998882,
+      "prompt_tokens": 348,
+      "completion_tokens": 23,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 144.8337000038009,
+      "confidence": null
+    },
+    {
+      "id": "invoice-go0032",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 771.7908999911742,
+      "ttft_ms": 165.14090000418946,
+      "tpot_ms": 11.979453999956604,
+      "prompt_tokens": 447,
+      "completion_tokens": 51,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 165.14090000418946,
+      "confidence": null
+    },
+    {
+      "id": "invoice-go0033",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 774.9470999988262,
+      "ttft_ms": 156.71759999531787,
+      "tpot_ms": 11.880390195965804,
+      "prompt_tokens": 411,
+      "completion_tokens": 52,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 156.71759999531787,
+      "confidence": null
+    },
+    {
+      "id": "clinical-go0034",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 499.12349999067374,
+      "ttft_ms": 82.76689999911468,
+      "tpot_ms": 10.472387179526358,
+      "prompt_tokens": 410,
+      "completion_tokens": 40,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 82.76689999911468,
+      "confidence": null
+    },
+    {
+      "id": "clinical-go0035",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 648.6040000017965,
+      "ttft_ms": 124.66260000655893,
+      "tpot_ms": 14.314419444417581,
+      "prompt_tokens": 361,
+      "completion_tokens": 37,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 124.66260000655893,
+      "confidence": null
+    },
+    {
+      "id": "contract-go0036",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 1033.8134999910835,
+      "ttft_ms": 243.6728999891784,
+      "tpot_ms": 14.104382000223268,
+      "prompt_tokens": 438,
+      "completion_tokens": 51,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 243.6728999891784,
+      "confidence": null
+    },
+    {
+      "id": "contract-go0037",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 932.7243000007002,
+      "ttft_ms": 241.60410001059063,
+      "tpot_ms": 14.243799999955323,
+      "prompt_tokens": 394,
+      "completion_tokens": 49,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 241.60410001059063,
+      "confidence": null
+    },
+    {
+      "id": "support-go0038",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 536.8441000027815,
+      "ttft_ms": 229.27830000116955,
+      "tpot_ms": 12.996865217523325,
+      "prompt_tokens": 379,
+      "completion_tokens": 24,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 229.27830000116955,
+      "confidence": null
+    },
+    {
+      "id": "support-go0039",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 247.5745999981882,
+      "ttft_ms": 107.90950000227895,
+      "tpot_ms": 8.076224999967963,
+      "prompt_tokens": 349,
+      "completion_tokens": 17,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 107.90950000227895,
+      "confidence": null
+    },
+    {
+      "id": "invoice-go0040",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 896.8631000025198,
+      "ttft_ms": 171.11250000016298,
+      "tpot_ms": 14.605448979525637,
+      "prompt_tokens": 465,
+      "completion_tokens": 50,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 171.11250000016298,
+      "confidence": null
+    },
+    {
+      "id": "invoice-go0041",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 773.0028999940259,
+      "ttft_ms": 168.1352000014158,
+      "tpot_ms": 13.554456818052461,
+      "prompt_tokens": 410,
+      "completion_tokens": 45,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 168.1352000014158,
+      "confidence": null
+    },
+    {
+      "id": "clinical-go0042",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 844.6232999995118,
+      "ttft_ms": 99.53320000204258,
+      "tpot_ms": 19.391639473676484,
+      "prompt_tokens": 413,
+      "completion_tokens": 39,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 99.53320000204258,
+      "confidence": null
+    },
+    {
+      "id": "clinical-go0043",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 562.1459999965737,
+      "ttft_ms": 135.6851999880746,
+      "tpot_ms": 15.465092593027899,
+      "prompt_tokens": 361,
+      "completion_tokens": 28,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 135.6851999880746,
+      "confidence": null
+    },
+    {
+      "id": "contract-go0044",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 1143.3054999943124,
+      "ttft_ms": 84.02809999824967,
+      "tpot_ms": 21.22262244888496,
+      "prompt_tokens": 435,
+      "completion_tokens": 50,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 84.02809999824967,
+      "confidence": null
+    },
+    {
+      "id": "contract-go0045",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 879.4630999909714,
+      "ttft_ms": 117.4194999912288,
+      "tpot_ms": 18.87144749998697,
+      "prompt_tokens": 391,
+      "completion_tokens": 41,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 117.4194999912288,
+      "confidence": null
+    },
+    {
+      "id": "support-go0046",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 425.15119999006856,
+      "ttft_ms": 103.40069999801926,
+      "tpot_ms": 13.23874347840699,
+      "prompt_tokens": 394,
+      "completion_tokens": 24,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 103.40069999801926,
+      "confidence": null
+    },
+    {
+      "id": "support-go0047",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 392.99179999215994,
+      "ttft_ms": 108.05110000364948,
+      "tpot_ms": 14.61277058800025,
+      "prompt_tokens": 354,
+      "completion_tokens": 18,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 108.05110000364948,
+      "confidence": null
+    },
+    {
+      "id": "invoice-go0048",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 947.6144000072964,
+      "ttft_ms": 113.96889999741688,
+      "tpot_ms": 16.201782353021496,
+      "prompt_tokens": 455,
+      "completion_tokens": 52,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 113.96889999741688,
+      "confidence": null
+    },
+    {
+      "id": "invoice-go0049",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 921.492199995555,
+      "ttft_ms": 92.92320000531618,
+      "tpot_ms": 16.29629599978216,
+      "prompt_tokens": 417,
+      "completion_tokens": 51,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 92.92320000531618,
+      "confidence": null
+    },
+    {
+      "id": "clinical-go0050",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 857.2826000017812,
+      "ttft_ms": 110.52040000504348,
+      "tpot_ms": 15.217522727404933,
+      "prompt_tokens": 409,
+      "completion_tokens": 45,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 110.52040000504348,
+      "confidence": null
+    },
+    {
+      "id": "clinical-go0051",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 346.30859999742825,
+      "ttft_ms": 106.2441999965813,
+      "tpot_ms": 9.24094400019385,
+      "prompt_tokens": 348,
+      "completion_tokens": 26,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 106.2441999965813,
+      "confidence": null
+    },
+    {
+      "id": "contract-go0052",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 786.8933999998262,
+      "ttft_ms": 92.45419999933802,
+      "tpot_ms": 15.2899911109772,
+      "prompt_tokens": 435,
+      "completion_tokens": 46,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 92.45419999933802,
+      "confidence": null
+    },
+    {
+      "id": "contract-go0053",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 711.0175999987405,
+      "ttft_ms": 109.08609999751206,
+      "tpot_ms": 12.662025532026359,
+      "prompt_tokens": 391,
+      "completion_tokens": 48,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 109.08609999751206,
+      "confidence": null
+    },
+    {
+      "id": "support-go0054",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 417.2184000053676,
+      "ttft_ms": 88.900000002468,
+      "tpot_ms": 15.231047619073209,
+      "prompt_tokens": 369,
+      "completion_tokens": 22,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 88.900000002468,
+      "confidence": null
+    },
+    {
+      "id": "support-go0055",
+      "error": null,
+      "schema_valid": true,
+      "elapsed_ms": 363.5824999946635,
+      "ttft_ms": 140.9399999974994,
+      "tpot_ms": 9.321621739376416,
+      "prompt_tokens": 355,
+      "completion_tokens": 24,
+      "finish_reason": "stop",
+      "answer_ttft_ms": 140.9399999974994,
+      "confidence": null
+    }
+  ],
+  "gpu_samples": [
+    {
+      "elapsed_s": 0.05694519999087788,
+      "vram_mib": 13385.0,
+      "watts": 138.13
+    },
+    {
+      "elapsed_s": 0.3477169999969192,
+      "vram_mib": 13387.0,
+      "watts": 135.7
+    },
+    {
+      "elapsed_s": 0.6449317999940831,
+      "vram_mib": 13387.0,
+      "watts": 100.9
+    },
+    {
+      "elapsed_s": 0.9411648999957833,
+      "vram_mib": 13387.0,
+      "watts": 70.83
+    },
+    {
+      "elapsed_s": 1.2319907999917632,
+      "vram_mib": 13387.0,
+      "watts": 60.58
+    },
+    {
+      "elapsed_s": 1.5273478999879444,
+      "vram_mib": 13387.0,
+      "watts": 40.09
+    },
+    {
+      "elapsed_s": 1.8232468999922276,
+      "vram_mib": 13381.0,
+      "watts": 39.83
+    },
+    {
+      "elapsed_s": 2.115511299998616,
+      "vram_mib": 13354.0,
+      "watts": 39.59
+    },
+    {
+      "elapsed_s": 2.411556399994879,
+      "vram_mib": 13354.0,
+      "watts": 36.66
+    },
+    {
+      "elapsed_s": 2.7062255999917397,
+      "vram_mib": 13354.0,
+      "watts": 34.37
+    },
+    {
+      "elapsed_s": 3.001357499990263,
+      "vram_mib": 13354.0,
+      "watts": 32.11
+    },
+    {
+      "elapsed_s": 3.3105627999902936,
+      "vram_mib": 13354.0,
+      "watts": 30.19
+    },
+    {
+      "elapsed_s": 3.5995716999896104,
+      "vram_mib": 13354.0,
+      "watts": 33.6
+    },
+    {
+      "elapsed_s": 3.90803789999336,
+      "vram_mib": 13386.0,
+      "watts": 72.68
+    },
+    {
+      "elapsed_s": 4.2009607999934815,
+      "vram_mib": 13387.0,
+      "watts": 84.48
+    },
+    {
+      "elapsed_s": 4.507927099999506,
+      "vram_mib": 13387.0,
+      "watts": 96.97
+    },
+    {
+      "elapsed_s": 4.800791899993783,
+      "vram_mib": 13387.0,
+      "watts": 98.92
+    },
+    {
+      "elapsed_s": 5.108068399989861,
+      "vram_mib": 13387.0,
+      "watts": 95.25
+    },
+    {
+      "elapsed_s": 5.401733099992271,
+      "vram_mib": 13387.0,
+      "watts": 91.77
+    },
+    {
+      "elapsed_s": 5.692373400001088,
+      "vram_mib": 13387.0,
+      "watts": 94.06
+    },
+    {
+      "elapsed_s": 5.9837401999975555,
+      "vram_mib": 13387.0,
+      "watts": 89.98
+    },
+    {
+      "elapsed_s": 6.2746727999910945,
+      "vram_mib": 13387.0,
+      "watts": 87.87
+    },
+    {
+      "elapsed_s": 6.567355899998802,
+      "vram_mib": 13387.0,
+      "watts": 97.12
+    },
+    {
+      "elapsed_s": 6.857970199998817,
+      "vram_mib": 13358.0,
+      "watts": 94.57
+    },
+    {
+      "elapsed_s": 7.166925300000003,
+      "vram_mib": 13354.0,
+      "watts": 93.78
+    },
+    {
+      "elapsed_s": 7.458232599994517,
+      "vram_mib": 13354.0,
+      "watts": 86.26
+    },
+    {
+      "elapsed_s": 7.767388699998264,
+      "vram_mib": 13354.0,
+      "watts": 88.14
+    },
+    {
+      "elapsed_s": 8.07087959999626,
+      "vram_mib": 13387.0,
+      "watts": 92.8
+    },
+    {
+      "elapsed_s": 8.363421499991091,
+      "vram_mib": 13387.0,
+      "watts": 89.71
+    },
+    {
+      "elapsed_s": 8.65710839998792,
+      "vram_mib": 13387.0,
+      "watts": 93.14
+    },
+    {
+      "elapsed_s": 8.963685499998974,
+      "vram_mib": 13387.0,
+      "watts": 86.23
+    },
+    {
+      "elapsed_s": 9.256439699995099,
+      "vram_mib": 13387.0,
+      "watts": 93.24
+    },
+    {
+      "elapsed_s": 9.56499279999116,
+      "vram_mib": 13387.0,
+      "watts": 91.9
+    },
+    {
+      "elapsed_s": 9.87200109999685,
+      "vram_mib": 13387.0,
+      "watts": 91.25
+    },
+    {
+      "elapsed_s": 10.182192499996745,
+      "vram_mib": 13387.0,
+      "watts": 86.69
+    },
+    {
+      "elapsed_s": 10.474302799993893,
+      "vram_mib": 13387.0,
+      "watts": 85.11
+    },
+    {
+      "elapsed_s": 10.77647439998691,
+      "vram_mib": 13387.0,
+      "watts": 89.67
+    },
+    {
+      "elapsed_s": 11.085477799992077,
+      "vram_mib": 13354.0,
+      "watts": 90.99
+    },
+    {
+      "elapsed_s": 11.38827830000082,
+      "vram_mib": 13354.0,
+      "watts": 93.87
+    }
+  ]
+}

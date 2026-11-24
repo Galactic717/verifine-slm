@@ -1,0 +1,1228 @@
+{
+  "model": "gemma-4-E4B-local",
+  "backend": "llama",
+  "count": 48,
+  "warmup": 8,
+  "concurrency": 4,
+  "constrained": true,
+  "max_tokens": 240,
+  "seed": 42,
+  "dataset_sha256": "ff0a319f5d2141d0e85100de10edff6f44258c1681894ad5c5af7ecf4bc2a808",
+  "summary": {
+    "successful": 48,
+    "errors": 0,
+    "wall_s": 42.84094900000491,
+    "requests_per_s": 1.1204233594357234,
+    "output_tokens_per_s": 258.1875578899695,
+    "peak_board_vram_mib": 15721.0,
+    "board_power_sample_mean_w": 146.9011188811189,
+    "electricity_usd_per_kwh_assumption": 0.15,
+    "gpu_electricity_usd_per_million_total_tokens": 0.008630057788971631,
+    "gpu_electricity_usd_per_million_requests": 5.4630063732896454,
+    "ttft_ms_p50": 1126.9623499974841,
+    "ttft_ms_p95": 1985.5598150075816,
+    "tpot_ms_p50": 4.976555173472587,
+    "tpot_ms_p95": 5.266190156973141,
+    "elapsed_ms_p50": 3611.9837500009453,
+    "elapsed_ms_p95": 3913.28869500503
+  },
+  "requests": [
+    {
+      "id": "invoice-go0008",
+      "error": null,
+      "elapsed_ms": 3122.9326000029687,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 443,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "invoice-go0009",
+      "error": null,
+      "elapsed_ms": 3119.5910000096774,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 425,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0010",
+      "error": null,
+      "elapsed_ms": 3120.0744999950984,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 386,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0011",
+      "error": null,
+      "elapsed_ms": 3120.300099995802,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 371,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0012",
+      "error": null,
+      "elapsed_ms": 3392.3323000053642,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 416,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0013",
+      "error": null,
+      "elapsed_ms": 3401.1473999999,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 389,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "support-go0014",
+      "error": null,
+      "elapsed_ms": 2591.8968000041787,
+      "ttft_ms": 2123.30030000885,
+      "tpot_ms": 2.3280317203976684,
+      "prompt_tokens": 377,
+      "completion_tokens": 187,
+      "finish_reason": "stop"
+    },
+    {
+      "id": "support-go0015",
+      "error": null,
+      "elapsed_ms": 3388.1156999996165,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 366,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "invoice-go0016",
+      "error": null,
+      "elapsed_ms": 3340.932999999495,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 452,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "invoice-go0017",
+      "error": null,
+      "elapsed_ms": 3375.220799993258,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 436,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0018",
+      "error": null,
+      "elapsed_ms": 3364.5581000018865,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 393,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0019",
+      "error": null,
+      "elapsed_ms": 3359.894399996847,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 368,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0020",
+      "error": null,
+      "elapsed_ms": 3579.6774000045843,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 414,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0021",
+      "error": null,
+      "elapsed_ms": 3631.04690000182,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 387,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "support-go0022",
+      "error": null,
+      "elapsed_ms": 1613.4697999950731,
+      "ttft_ms": 1048.894299994572,
+      "tpot_ms": 5.223914851505992,
+      "prompt_tokens": 387,
+      "completion_tokens": 102,
+      "finish_reason": "stop"
+    },
+    {
+      "id": "support-go0023",
+      "error": null,
+      "elapsed_ms": 3624.640999987605,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 370,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "invoice-go0024",
+      "error": null,
+      "elapsed_ms": 3606.2313000002177,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 451,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "invoice-go0025",
+      "error": null,
+      "elapsed_ms": 3661.626000000979,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 430,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0026",
+      "error": null,
+      "elapsed_ms": 3624.791999987792,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 412,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0027",
+      "error": null,
+      "elapsed_ms": 3620.3387999994447,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 391,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0028",
+      "error": null,
+      "elapsed_ms": 3601.9469000020763,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 434,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0029",
+      "error": null,
+      "elapsed_ms": 3657.4629999959143,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 396,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "support-go0030",
+      "error": null,
+      "elapsed_ms": 1522.4048999953084,
+      "ttft_ms": 963.9835999987554,
+      "tpot_ms": 5.2736505049967555,
+      "prompt_tokens": 384,
+      "completion_tokens": 100,
+      "finish_reason": "stop"
+    },
+    {
+      "id": "support-go0031",
+      "error": null,
+      "elapsed_ms": 3702.033499997924,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 366,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "invoice-go0032",
+      "error": null,
+      "elapsed_ms": 3655.0380999979097,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 443,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "invoice-go0033",
+      "error": null,
+      "elapsed_ms": 3654.2774999979883,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 427,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0034",
+      "error": null,
+      "elapsed_ms": 3617.736200001673,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 400,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0035",
+      "error": null,
+      "elapsed_ms": 3547.8054999985034,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 379,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0036",
+      "error": null,
+      "elapsed_ms": 3737.6481000101194,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 425,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0037",
+      "error": null,
+      "elapsed_ms": 3716.003499997896,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 407,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "support-go0038",
+      "error": null,
+      "elapsed_ms": 1766.6454999998678,
+      "ttft_ms": 1205.0304000003962,
+      "tpot_ms": 4.729195495439182,
+      "prompt_tokens": 380,
+      "completion_tokens": 112,
+      "finish_reason": "stop"
+    },
+    {
+      "id": "support-go0039",
+      "error": null,
+      "elapsed_ms": 3618.2047000038438,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 367,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "invoice-go0040",
+      "error": null,
+      "elapsed_ms": 3570.5789999919944,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 453,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "invoice-go0041",
+      "error": null,
+      "elapsed_ms": 3547.444399999222,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 423,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0042",
+      "error": null,
+      "elapsed_ms": 3525.2440000040224,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 399,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0043",
+      "error": null,
+      "elapsed_ms": 3541.629200000898,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 377,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0044",
+      "error": null,
+      "elapsed_ms": 3585.523400004604,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 424,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0045",
+      "error": null,
+      "elapsed_ms": 3627.1486000041477,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 401,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "support-go0046",
+      "error": null,
+      "elapsed_ms": 3627.499900001567,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 390,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "support-go0047",
+      "error": null,
+      "elapsed_ms": 3623.616299999412,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 370,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "invoice-go0048",
+      "error": null,
+      "elapsed_ms": 3659.713199987891,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 451,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "invoice-go0049",
+      "error": null,
+      "elapsed_ms": 3703.5656000080053,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 432,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0050",
+      "error": null,
+      "elapsed_ms": 3703.1742999970447,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 400,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "clinical-go0051",
+      "error": null,
+      "elapsed_ms": 3632.076900001266,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 366,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0052",
+      "error": null,
+      "elapsed_ms": 3671.32799999672,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 422,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "contract-go0053",
+      "error": null,
+      "elapsed_ms": 4498.493699997198,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 402,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "support-go0054",
+      "error": null,
+      "elapsed_ms": 4497.367600008147,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 370,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    },
+    {
+      "id": "support-go0055",
+      "error": null,
+      "elapsed_ms": 4007.8644000022905,
+      "ttft_ms": null,
+      "tpot_ms": null,
+      "prompt_tokens": 372,
+      "completion_tokens": 240,
+      "finish_reason": "length"
+    }
+  ],
+  "gpu_samples": [
+    {
+      "elapsed_s": 0.06408579999697395,
+      "vram_mib": 15686.0,
+      "watts": 159.93
+    },
+    {
+      "elapsed_s": 0.3598492000019178,
+      "vram_mib": 15563.0,
+      "watts": 161.54
+    },
+    {
+      "elapsed_s": 0.6540383999963524,
+      "vram_mib": 15578.0,
+      "watts": 145.81
+    },
+    {
+      "elapsed_s": 0.9462021999934223,
+      "vram_mib": 15661.0,
+      "watts": 142.54
+    },
+    {
+      "elapsed_s": 1.2425003999960609,
+      "vram_mib": 15630.0,
+      "watts": 138.09
+    },
+    {
+      "elapsed_s": 1.5389645999966888,
+      "vram_mib": 15630.0,
+      "watts": 153.85
+    },
+    {
+      "elapsed_s": 1.8308264999941457,
+      "vram_mib": 15630.0,
+      "watts": 162.36
+    },
+    {
+      "elapsed_s": 2.124154599994654,
+      "vram_mib": 15630.0,
+      "watts": 165.5
+    },
+    {
+      "elapsed_s": 2.4217024999961723,
+      "vram_mib": 15630.0,
+      "watts": 164.3
+    },
+    {
+      "elapsed_s": 2.7153115999972215,
+      "vram_mib": 15633.0,
+      "watts": 158.38
+    },
+    {
+      "elapsed_s": 3.0112472000037087,
+      "vram_mib": 15661.0,
+      "watts": 154.41
+    },
+    {
+      "elapsed_s": 3.3087469000020064,
+      "vram_mib": 15661.0,
+      "watts": 153.68
+    },
+    {
+      "elapsed_s": 3.6025988000037614,
+      "vram_mib": 15679.0,
+      "watts": 136.3
+    },
+    {
+      "elapsed_s": 3.8981474000029266,
+      "vram_mib": 15679.0,
+      "watts": 126.25
+    },
+    {
+      "elapsed_s": 4.188753700000234,
+      "vram_mib": 15679.0,
+      "watts": 129.0
+    },
+    {
+      "elapsed_s": 4.48623029999726,
+      "vram_mib": 15679.0,
+      "watts": 148.6
+    },
+    {
+      "elapsed_s": 4.7820980999968015,
+      "vram_mib": 15679.0,
+      "watts": 167.62
+    },
+    {
+      "elapsed_s": 5.0766419999999925,
+      "vram_mib": 15655.0,
+      "watts": 167.56
+    },
+    {
+      "elapsed_s": 5.372623300005216,
+      "vram_mib": 15646.0,
+      "watts": 167.55
+    },
+    {
+      "elapsed_s": 5.667417699994985,
+      "vram_mib": 15646.0,
+      "watts": 151.94
+    },
+    {
+      "elapsed_s": 5.960268800001359,
+      "vram_mib": 15646.0,
+      "watts": 140.95
+    },
+    {
+      "elapsed_s": 6.25271060000523,
+      "vram_mib": 15646.0,
+      "watts": 137.5
+    },
+    {
+      "elapsed_s": 6.546420099999523,
+      "vram_mib": 15646.0,
+      "watts": 140.71
+    },
+    {
+      "elapsed_s": 6.8478276999958325,
+      "vram_mib": 15646.0,
+      "watts": 134.69
+    },
+    {
+      "elapsed_s": 7.134983500000089,
+      "vram_mib": 15679.0,
+      "watts": 129.11
+    },
+    {
+      "elapsed_s": 7.433893800000078,
+      "vram_mib": 15679.0,
+      "watts": 132.4
+    },
+    {
+      "elapsed_s": 7.725654199995915,
+      "vram_mib": 15669.0,
+      "watts": 136.04
+    },
+    {
+      "elapsed_s": 8.018027099999017,
+      "vram_mib": 15675.0,
+      "watts": 144.02
+    },
+    {
+      "elapsed_s": 8.313835900000413,
+      "vram_mib": 15675.0,
+      "watts": 162.98
+    },
+    {
+      "elapsed_s": 8.624748899994302,
+      "vram_mib": 15675.0,
+      "watts": 167.48
+    },
+    {
+      "elapsed_s": 8.921044799993979,
+      "vram_mib": 15675.0,
+      "watts": 166.07
+    },
+    {
+      "elapsed_s": 9.219664000003831,
+      "vram_mib": 15675.0,
+      "watts": 152.32
+    },
+    {
+      "elapsed_s": 9.514205899991794,
+      "vram_mib": 15682.0,
+      "watts": 144.52
+    },
+    {
+      "elapsed_s": 9.806922799994936,
+      "vram_mib": 15676.0,
+      "watts": 143.73
+    },
+    {
+      "elapsed_s": 10.102932399997371,
+      "vram_mib": 15641.0,
+      "watts": 143.55
+    },
+    {
+      "elapsed_s": 10.400611299992306,
+      "vram_mib": 15645.0,
+      "watts": 130.13
+    },
+    {
+      "elapsed_s": 10.70875160000287,
+      "vram_mib": 15645.0,
+      "watts": 126.63
+    },
+    {
+      "elapsed_s": 11.004274099992472,
+      "vram_mib": 15645.0,
+      "watts": 126.34
+    },
+    {
+      "elapsed_s": 11.299130999992485,
+      "vram_mib": 15645.0,
+      "watts": 136.45
+    },
+    {
+      "elapsed_s": 11.59430440000142,
+      "vram_mib": 15645.0,
+      "watts": 148.34
+    },
+    {
+      "elapsed_s": 11.890025999993668,
+      "vram_mib": 15645.0,
+      "watts": 140.63
+    },
+    {
+      "elapsed_s": 12.183270499997889,
+      "vram_mib": 15645.0,
+      "watts": 139.78
+    },
+    {
+      "elapsed_s": 12.478802400000859,
+      "vram_mib": 15645.0,
+      "watts": 142.83
+    },
+    {
+      "elapsed_s": 12.778156600004877,
+      "vram_mib": 15645.0,
+      "watts": 146.21
+    },
+    {
+      "elapsed_s": 13.072087199994712,
+      "vram_mib": 15628.0,
+      "watts": 142.96
+    },
+    {
+      "elapsed_s": 13.366613199992571,
+      "vram_mib": 15632.0,
+      "watts": 141.31
+    },
+    {
+      "elapsed_s": 13.668277299992042,
+      "vram_mib": 15637.0,
+      "watts": 139.67
+    },
+    {
+      "elapsed_s": 13.98717459999898,
+      "vram_mib": 15671.0,
+      "watts": 125.02
+    },
+    {
+      "elapsed_s": 14.299459999994724,
+      "vram_mib": 15645.0,
+      "watts": 127.69
+    },
+    {
+      "elapsed_s": 14.611959899993963,
+      "vram_mib": 15645.0,
+      "watts": 129.41
+    },
+    {
+      "elapsed_s": 14.91497199999867,
+      "vram_mib": 15642.0,
+      "watts": 137.91
+    },
+    {
+      "elapsed_s": 15.217017399991164,
+      "vram_mib": 15661.0,
+      "watts": 156.8
+    },
+    {
+      "elapsed_s": 15.51039939999464,
+      "vram_mib": 15661.0,
+      "watts": 150.22
+    },
+    {
+      "elapsed_s": 15.808503099993686,
+      "vram_mib": 15661.0,
+      "watts": 148.95
+    },
+    {
+      "elapsed_s": 16.11634090000007,
+      "vram_mib": 15656.0,
+      "watts": 141.42
+    },
+    {
+      "elapsed_s": 16.41241319999972,
+      "vram_mib": 15652.0,
+      "watts": 140.47
+    },
+    {
+      "elapsed_s": 16.705161599995336,
+      "vram_mib": 15663.0,
+      "watts": 137.09
+    },
+    {
+      "elapsed_s": 16.99999480000406,
+      "vram_mib": 15664.0,
+      "watts": 138.59
+    },
+    {
+      "elapsed_s": 17.29827650000516,
+      "vram_mib": 15663.0,
+      "watts": 146.83
+    },
+    {
+      "elapsed_s": 17.591974499999196,
+      "vram_mib": 15660.0,
+      "watts": 141.31
+    },
+    {
+      "elapsed_s": 17.88668090000283,
+      "vram_mib": 15659.0,
+      "watts": 145.35
+    },
+    {
+      "elapsed_s": 18.182775799999945,
+      "vram_mib": 15659.0,
+      "watts": 144.82
+    },
+    {
+      "elapsed_s": 18.479298799997196,
+      "vram_mib": 15655.0,
+      "watts": 141.32
+    },
+    {
+      "elapsed_s": 18.774111799997627,
+      "vram_mib": 15655.0,
+      "watts": 149.75
+    },
+    {
+      "elapsed_s": 19.069534499998554,
+      "vram_mib": 15655.0,
+      "watts": 140.03
+    },
+    {
+      "elapsed_s": 19.379821199996513,
+      "vram_mib": 15653.0,
+      "watts": 136.07
+    },
+    {
+      "elapsed_s": 19.68889649999619,
+      "vram_mib": 15653.0,
+      "watts": 135.65
+    },
+    {
+      "elapsed_s": 19.9859737999941,
+      "vram_mib": 15659.0,
+      "watts": 143.73
+    },
+    {
+      "elapsed_s": 20.277396599994972,
+      "vram_mib": 15658.0,
+      "watts": 139.71
+    },
+    {
+      "elapsed_s": 20.571125400005258,
+      "vram_mib": 15658.0,
+      "watts": 134.77
+    },
+    {
+      "elapsed_s": 20.86456940000062,
+      "vram_mib": 15658.0,
+      "watts": 134.23
+    },
+    {
+      "elapsed_s": 21.172898499993607,
+      "vram_mib": 15694.0,
+      "watts": 133.74
+    },
+    {
+      "elapsed_s": 21.46470749999571,
+      "vram_mib": 15721.0,
+      "watts": 145.24
+    },
+    {
+      "elapsed_s": 21.76105899999675,
+      "vram_mib": 15721.0,
+      "watts": 161.64
+    },
+    {
+      "elapsed_s": 22.05687259999104,
+      "vram_mib": 15721.0,
+      "watts": 170.9
+    },
+    {
+      "elapsed_s": 22.352025300002424,
+      "vram_mib": 15721.0,
+      "watts": 194.99
+    },
+    {
+      "elapsed_s": 22.661512399994535,
+      "vram_mib": 15721.0,
+      "watts": 192.98
+    },
+    {
+      "elapsed_s": 22.960241799999494,
+      "vram_mib": 15721.0,
+      "watts": 159.81
+    },
+    {
+      "elapsed_s": 23.25244969999767,
+      "vram_mib": 15721.0,
+      "watts": 139.5
+    },
+    {
+      "elapsed_s": 23.54994870000519,
+      "vram_mib": 15719.0,
+      "watts": 138.16
+    },
+    {
+      "elapsed_s": 23.844046199999866,
+      "vram_mib": 15719.0,
+      "watts": 143.34
+    },
+    {
+      "elapsed_s": 24.14181099999405,
+      "vram_mib": 15720.0,
+      "watts": 141.08
+    },
+    {
+      "elapsed_s": 24.438400999992155,
+      "vram_mib": 15719.0,
+      "watts": 140.41
+    },
+    {
+      "elapsed_s": 24.752734199995757,
+      "vram_mib": 15719.0,
+      "watts": 131.55
+    },
+    {
+      "elapsed_s": 25.058696299995063,
+      "vram_mib": 15713.0,
+      "watts": 134.2
+    },
+    {
+      "elapsed_s": 25.369881699996768,
+      "vram_mib": 15711.0,
+      "watts": 136.98
+    },
+    {
+      "elapsed_s": 25.66549079999095,
+      "vram_mib": 15712.0,
+      "watts": 134.78
+    },
+    {
+      "elapsed_s": 25.977136000001337,
+      "vram_mib": 15710.0,
+      "watts": 138.05
+    },
+    {
+      "elapsed_s": 26.270561099998304,
+      "vram_mib": 15700.0,
+      "watts": 130.9
+    },
+    {
+      "elapsed_s": 26.583192999998573,
+      "vram_mib": 15690.0,
+      "watts": 120.58
+    },
+    {
+      "elapsed_s": 26.89485899999272,
+      "vram_mib": 15668.0,
+      "watts": 131.51
+    },
+    {
+      "elapsed_s": 27.18923309999809,
+      "vram_mib": 15668.0,
+      "watts": 141.72
+    },
+    {
+      "elapsed_s": 27.500287799994112,
+      "vram_mib": 15668.0,
+      "watts": 149.6
+    },
+    {
+      "elapsed_s": 27.79752209999424,
+      "vram_mib": 15677.0,
+      "watts": 158.88
+    },
+    {
+      "elapsed_s": 28.095333199991728,
+      "vram_mib": 15680.0,
+      "watts": 159.77
+    },
+    {
+      "elapsed_s": 28.388827100003255,
+      "vram_mib": 15680.0,
+      "watts": 153.21
+    },
+    {
+      "elapsed_s": 28.68438170000445,
+      "vram_mib": 15680.0,
+      "watts": 141.95
+    },
+    {
+      "elapsed_s": 28.981370499997865,
+      "vram_mib": 15680.0,
+      "watts": 139.46
+    },
+    {
+      "elapsed_s": 29.275663099993835,
+      "vram_mib": 15680.0,
+      "watts": 135.42
+    },
+    {
+      "elapsed_s": 29.573378000000957,
+      "vram_mib": 15680.0,
+      "watts": 140.79
+    },
+    {
+      "elapsed_s": 29.886393799999496,
+      "vram_mib": 15673.0,
+      "watts": 135.9
+    },
+    {
+      "elapsed_s": 30.196123999994597,
+      "vram_mib": 15671.0,
+      "watts": 132.99
+    },
+    {
+      "elapsed_s": 30.4917368000024,
+      "vram_mib": 15671.0,
+      "watts": 134.08
+    },
+    {
+      "elapsed_s": 30.80120810000517,
+      "vram_mib": 15671.0,
+      "watts": 134.06
+    },
+    {
+      "elapsed_s": 31.094157200001064,
+      "vram_mib": 15671.0,
+      "watts": 141.32
+    },
+    {
+      "elapsed_s": 31.392148600003566,
+      "vram_mib": 15692.0,
+      "watts": 158.51
+    },
+    {
+      "elapsed_s": 31.686275700005353,
+      "vram_mib": 15692.0,
+      "watts": 159.81
+    },
+    {
+      "elapsed_s": 31.97793449999881,
+      "vram_mib": 15692.0,
+      "watts": 146.17
+    },
+    {
+      "elapsed_s": 32.27377240000351,
+      "vram_mib": 15692.0,
+      "watts": 136.21
+    },
+    {
+      "elapsed_s": 32.57010929999524,
+      "vram_mib": 15692.0,
+      "watts": 136.27
+    },
+    {
+      "elapsed_s": 32.86501880000287,
+      "vram_mib": 15666.0,
+      "watts": 134.29
+    },
+    {
+      "elapsed_s": 33.16234870000335,
+      "vram_mib": 15666.0,
+      "watts": 134.32
+    },
+    {
+      "elapsed_s": 33.454932599997846,
+      "vram_mib": 15667.0,
+      "watts": 129.09
+    },
+    {
+      "elapsed_s": 33.76656289999664,
+      "vram_mib": 15697.0,
+      "watts": 129.06
+    },
+    {
+      "elapsed_s": 34.07477819999622,
+      "vram_mib": 15699.0,
+      "watts": 140.53
+    },
+    {
+      "elapsed_s": 34.38616149999143,
+      "vram_mib": 15700.0,
+      "watts": 149.6
+    },
+    {
+      "elapsed_s": 34.68289460000233,
+      "vram_mib": 15702.0,
+      "watts": 156.72
+    },
+    {
+      "elapsed_s": 34.99484990000201,
+      "vram_mib": 15701.0,
+      "watts": 179.37
+    },
+    {
+      "elapsed_s": 35.28990010000416,
+      "vram_mib": 15701.0,
+      "watts": 180.16
+    },
+    {
+      "elapsed_s": 35.58826819999376,
+      "vram_mib": 15701.0,
+      "watts": 169.18
+    },
+    {
+      "elapsed_s": 35.88477239999338,
+      "vram_mib": 15701.0,
+      "watts": 163.53
+    },
+    {
+      "elapsed_s": 36.209633999998914,
+      "vram_mib": 15700.0,
+      "watts": 161.88
+    },
+    {
+      "elapsed_s": 36.50351710000541,
+      "vram_mib": 15655.0,
+      "watts": 156.18
+    },
+    {
+      "elapsed_s": 36.79896679999365,
+      "vram_mib": 15438.0,
+      "watts": 156.16
+    },
+    {
+      "elapsed_s": 37.09556089999387,
+      "vram_mib": 15437.0,
+      "watts": 158.11
+    },
+    {
+      "elapsed_s": 37.389463200001046,
+      "vram_mib": 15136.0,
+      "watts": 142.3
+    },
+    {
+      "elapsed_s": 37.68627109999943,
+      "vram_mib": 15136.0,
+      "watts": 147.6
+    },
+    {
+      "elapsed_s": 37.98050609999336,
+      "vram_mib": 15136.0,
+      "watts": 162.09
+    },
+    {
+      "elapsed_s": 38.27719539999089,
+      "vram_mib": 15135.0,
+      "watts": 171.75
+    },
+    {
+      "elapsed_s": 38.57119659999444,
+      "vram_mib": 15135.0,
+      "watts": 182.41
+    },
+    {
+      "elapsed_s": 38.86482839999371,
+      "vram_mib": 15135.0,
+      "watts": 183.09
+    },
+    {
+      "elapsed_s": 39.1782494999934,
+      "vram_mib": 15135.0,
+      "watts": 181.09
+    },
+    {
+      "elapsed_s": 39.48725269999704,
+      "vram_mib": 15135.0,
+      "watts": 159.26
+    },
+    {
+      "elapsed_s": 39.81286029999319,
+      "vram_mib": 15135.0,
+      "watts": 155.51
+    },
+    {
+      "elapsed_s": 40.12436629999138,
+      "vram_mib": 15135.0,
+      "watts": 156.3
+    },
+    {
+      "elapsed_s": 40.45264529999986,
+      "vram_mib": 15135.0,
+      "watts": 150.85
+    },
+    {
+      "elapsed_s": 40.76144259999273,
+      "vram_mib": 15135.0,
+      "watts": 136.85
+    },
+    {
+      "elapsed_s": 41.06833559999359,
+      "vram_mib": 15135.0,
+      "watts": 130.3
+    },
+    {
+      "elapsed_s": 41.38232429999334,
+      "vram_mib": 15135.0,
+      "watts": 125.36
+    },
+    {
+      "elapsed_s": 41.70655519999855,
+      "vram_mib": 15135.0,
+      "watts": 130.32
+    },
+    {
+      "elapsed_s": 42.020587199993315,
+      "vram_mib": 15135.0,
+      "watts": 142.77
+    },
+    {
+      "elapsed_s": 42.344094200001564,
+      "vram_mib": 15135.0,
+      "watts": 161.32
+    },
+    {
+      "elapsed_s": 42.653711699997075,
+      "vram_mib": 15135.0,
+      "watts": 173.35
+    }
+  ]
+}
