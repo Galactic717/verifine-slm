@@ -1,0 +1,7 @@
+model: Qwen/Qwen3-4B-Instruct-2507
+revision: cdbee75f17c01a7cc42f958dc650907174af0554
+output: artifacts/qwen-sft
+max_steps: 200
+learning_rate: 0.00015
+gradient_accumulation: 4
+max_length: 1024
