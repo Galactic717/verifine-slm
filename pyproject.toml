@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "verifine-slm"
+version = "0.1.0"
+description = "Verifiable-reward post-training and private bilingual structured extraction"
+readme = "README.md"
+requires-python = ">=3.11,<3.15"
+dependencies = [
+  "datasketch==1.10.0",
+  "fastapi>=0.115,<1",
+  "httpx>=0.28,<0.29",
+  "prometheus-client>=0.22,<1",
+  "pydantic>=2.11,<3",
+  "pyyaml>=6,<7",
+  "uvicorn>=0.35,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1", "mypy>=1.16,<2", "types-PyYAML>=6,<7"]
+report = ["matplotlib>=3.10,<4"]
+train = [
+  "torch>=2.8,<3",
+  "transformers==5.5.4",
+  "trl==0.29.0",
+  "datasets==4.8.5",
+  "peft==0.22.0",
+  "bitsandbytes==0.50.2",
+  "accelerate==1.16.0",
+  "mlflow-skinny==3.18.0",
+  "sentencepiece>=0.2,<1",
+]
+publish = ["huggingface-hub>=1,<2"]
+demo = ["gradio==6.19.0"]
+
+[project.scripts]
+verifine = "verifine.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/verifine"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "B"]
+
+[tool.mypy]
+python_version = "3.11"
+check_untyped_defs = true
+warn_unused_ignores = true
+ignore_missing_imports = true
+files = ["src/verifine"]

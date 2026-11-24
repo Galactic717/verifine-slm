@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+build/
+dist/
+artifacts/
+data/
+!src/verifine/data/
+!src/verifine/data/*.py
+mlruns/
+docs/superpowers/
+*.gguf
+*.safetensors
+.env
