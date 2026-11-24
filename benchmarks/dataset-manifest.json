@@ -1,0 +1,14 @@
+{
+  "seed": 42,
+  "counts": {
+    "train": 787,
+    "validation": 118,
+    "golden": 300
+  },
+  "sha256": {
+    "train.jsonl": "3557938214798285f2a610b6face68eaf482e1c9ee19ed623528dc75e29e72b6",
+    "validation.jsonl": "c759f04f6f4c6154b9c2cfd078e87cf26eb5f4b4ad04e98520065de3f0847285",
+    "golden.jsonl": "ff0a319f5d2141d0e85100de10edff6f44258c1681894ad5c5af7ecf4bc2a808"
+  },
+  "jaccard_threshold": 0.84
+}
