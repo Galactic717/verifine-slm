@@ -1,0 +1,7 @@
+.git
+.venv
+artifacts
+mlruns
+data
+benchmarks
+**/__pycache__

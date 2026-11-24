@@ -1,0 +1,17 @@
+services:
+  ollama:
+    image: ${OLLAMA_IMAGE:-ollama/ollama:0.40.18}
+    gpus: all
+    environment:
+      OLLAMA_NO_CLOUD: "1"
+      OLLAMA_NUM_PARALLEL: "4"
+      OLLAMA_CONTEXT_LENGTH: "2048"
+    ports: ["127.0.0.1:11435:11434"]
+    volumes:
+      - ollama-models:/root/.ollama
+      - type: bind
+        source: ${VERIFINE_GGUF_DIR:-../artifacts}
+        target: /weights
+        read_only: true
+volumes:
+  ollama-models: {}

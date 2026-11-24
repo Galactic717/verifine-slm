@@ -1,0 +1,16 @@
+services:
+  vllm:
+    image: ${VLLM_IMAGE:-vllm/vllm-openai:v0.18.0}
+    gpus: all
+    ipc: host
+    environment:
+      HF_HUB_OFFLINE: "1"
+      HF_HUB_DISABLE_TELEMETRY: "1"
+    volumes:
+      - type: bind
+        source: ${VERIFINE_MODEL_DIR:?Path to merged local Safetensors}
+        target: /model
+        read_only: true
+    ports: ["127.0.0.1:8091:8000"]
+    command: ["--model", "/model", "--served-model-name", "verifine", "--max-model-len", "2048",
+              "--gpu-memory-utilization", "0.85", "--enable-prefix-caching"]
