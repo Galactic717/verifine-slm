@@ -17,7 +17,7 @@
 | Qwen3-4B SFT NF4 | 100% | 100% | 0.9839 | 92.67% | 0.10% |
 | Qwen3-4B SFT + GRPO NF4 | 100% | 100% | 0.9853 | 93.00% | 0.10% |
 
-Ukrainian field F1 was 0.9600 and English field F1 was 0.9487. Support calls had 67.57% schema validity and accounted for 24 of 26 invalid objects. The model frequently emitted a null `arguments` object or a string `"null"` as the tool name. The typed contract requires an arguments object with nullable inner fields.
+For the Gemma reference, Ukrainian field F1 was 0.9600 and English field F1 was 0.9487. Support calls had 67.57% schema validity and accounted for 24 of 26 invalid objects. The model frequently emitted a null `arguments` object or a string `"null"` as the tool name. The typed contract requires an arguments object with nullable inner fields.
 
 The first guided-decoding benchmark used the installed build without an explicit reasoning token budget. It reached the generation cap in 44 of 48 attempts at concurrency four. The launcher now sets the reasoning budget to zero. The raw trial remains available with its original settings as a diagnostic.
 
@@ -52,4 +52,29 @@ The vLLM and SGLang Compose configurations validated. Their multi-gigabyte image
 
 ## Reproducibility
 
-The dataset manifest and raw quality and serving responses include the input SHA-256. Use the report fields `backend`, `constrained`, `concurrency` and `max_tokens` before comparing latencies. The Qwen paired ablation compares before and after models with the same quantization and tokenizer. Different models and formats in the serving table must be reported with their quantization.
+The dataset manifest and raw quality and serving responses include the input SHA-256. The [CPU replay](../README.md#replay-the-experiment) uses the committed predictions and regenerated synthetic data. The paired statistics can also be recomputed directly from the raw reports.
+
+```bash
+verifine compare benchmarks/qwen-ablation/base.json benchmarks/qwen-ablation/sft.json --output artifacts/eval/replay/base-vs-sft.json
+verifine compare benchmarks/qwen-ablation/sft.json benchmarks/qwen-ablation/grpo.json --output artifacts/eval/replay/sft-vs-grpo.json
+```
+
+### Reproduce the Qwen ablation
+
+Install the [WSL2 CUDA training environment](../README.md#train-on-wsl2-and-cuda) and provision the original `Qwen/Qwen3-4B-Instruct-2507` Safetensors snapshot at the [pinned revision](../configs/qwen3_4b_sft.yaml). If it is outside the Hugging Face cache used by WSL, set `VERIFINE_QWEN_MODEL` to that snapshot directory. The GitHub repository contains the predictions, reward logs, configuration and adapter hashes. Fresh generations require the base weights and both trained adapters.
+
+From the repository root, these commands use the recorded optimizer step counts and output paths. The original GRPO run at challenge ratio 0 is the reward-saturation diagnostic. The final ablation uses the GRPO run at ratio 1, which added archival distractors to every synthetic training case.
+
+```bash
+verifine data --seed 42
+bash scripts/start-wsl-train.sh sft --max-steps 64 --output artifacts/qwen-sft-pilot
+bash scripts/start-wsl-train.sh grpo --max-steps 20 --challenge-ratio 0 \
+  --adapter artifacts/qwen-sft-pilot --output artifacts/qwen-grpo-pilot
+bash scripts/start-wsl-train.sh grpo --max-steps 20 --challenge-ratio 1 \
+  --adapter artifacts/qwen-sft-pilot --output artifacts/qwen-grpo-challenge
+VERIFINE_SFT_ADAPTER=artifacts/qwen-sft-pilot \
+VERIFINE_GRPO_ADAPTER=artifacts/qwen-grpo-challenge \
+VERIFINE_EVAL_BATCH_SIZE=24 bash scripts/run-qwen-ablation.sh
+```
+
+The three Qwen checkpoints use the same tokenizer, NF4 quantization, greedy decoding and a 240-token cap. Batch size 24 is the setting recorded on the RTX 5080. For latency comparisons, use the streaming reports and check `backend`, `constrained`, `concurrency` and `max_tokens`. Report each model's quantization format when comparing different checkpoints.

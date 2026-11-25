@@ -24,7 +24,7 @@ The same Q4_K_M checkpoint served **7.33 requests/s** with llama.cpp and **4.21 
 
 ## Replay the experiment
 
-Regenerate the synthetic dataset and open a Gradio replay of the 300 recorded base and post-training predictions. The replay runs on CPU using the reports committed here.
+The repository ships the synthetic dataset generator, benchmark reports and 300 paired Qwen base and SFT + GRPO predictions. Regenerate the same dataset and inspect the recorded predictions in a local Gradio app. The replay runs on CPU without model weights. [Recorded benchmark files](benchmarks/README.md)
 
 ```bash
 python -m pip install -e ".[demo]"
@@ -70,7 +70,7 @@ flowchart LR
 
 ## Windows quick start
 
-Open PowerShell in the project directory. Python 3.13 is used in this example.
+Live inference requires a local model and inference engine. This example uses an installed Windows llama.cpp build, a Gemma GGUF and Python 3.13. Open PowerShell in the project directory.
 
 ```powershell
 py -3.13 -m venv .venv
@@ -79,7 +79,7 @@ py -3.13 -m venv .venv
 .\scripts\start-llama.ps1
 ```
 
-The launcher uses the installed Gemma GGUF under `%LOCALAPPDATA%\Programs\llama.cpp` and loopback port **9940**. To serve a different local GGUF, pass `-ModelPath` and `-Alias`. The file paths and GPU settings in the existing llama.cpp launcher can also be reused by pointing Verifine at its running URL and alias.
+The launcher looks for `models\gemma-4-E4B-it-UD-Q8_K_XL.gguf` and `llama-server.exe` under `%LOCALAPPDATA%\Programs\llama.cpp` and listens on loopback port **9940**. Pass `-Server`, `-ModelPath` or `-Alias` to use another installation or GGUF. If llama.cpp is already running, use `--url` and `--model` with `eval` and `bench`, and set `VERIFINE_BACKEND_URL` and `VERIFINE_MODEL` for the gateway.
 
 From another PowerShell window in the project directory:
 
@@ -98,6 +98,8 @@ Invoke-RestMethod http://127.0.0.1:8088/v1/extract -Method Post -ContentType app
 
 Use `VERIFINE_BACKEND`, `VERIFINE_BACKEND_URL` and `VERIFINE_MODEL` to switch engines. `VERIFINE_GATEWAY_KEY` enables bearer authentication for inference routes. `/healthz` reports gateway liveness and `/metrics` exposes Prometheus request, latency and token counters. [Verstak provider settings](integrations/README.md)
 
+`/v1/extract` validates model responses against the task schema. The evaluation harness measures field accuracy and checks whether asserted values appear in the source.
+
 ## Data and reward
 
 `verifine data` writes `train.jsonl`, `validation.jsonl`, `golden.jsonl` and a SHA-256 manifest. The default seed is 42. MinHash proposes near-duplicate candidates and the split audit checks cross-split shingle similarity exhaustively. Each document layout family belongs to one split. Imported JSONL via `--source` goes into training only and is marked non-synthetic. The regex scrub covers common phone, email and numeric identifier patterns. Use synthetic fixtures or pre-scrubbed, licensed documents.
@@ -106,14 +108,18 @@ The reward gives invalid JSON or schema violations zero. For a valid object, it 
 
 ## Train on WSL2 and CUDA
 
-Use an original Qwen3‑4B‑Instruct Safetensors snapshot. The offline scripts use the model revision pinned in the configs from the Hugging Face cache. Set `VERIFINE_QWEN_MODEL` to select an existing snapshot elsewhere, including a Windows cache mounted in WSL. Stop GPU inference before training when GPU memory is limited.
+Training and fresh NF4 evaluation require a BF16-capable CUDA GPU and the original Qwen3‑4B‑Instruct Safetensors snapshot. The offline scripts use the model revision pinned in the configs from the Hugging Face cache. Set `VERIFINE_QWEN_MODEL` to select the same snapshot elsewhere, including a Windows cache mounted in WSL. Stop GPU inference before training when GPU memory is limited.
 
 ```bash
 uv venv ~/.local/share/verifine-train
 source ~/.local/share/verifine-train/bin/activate
 uv pip install torch==2.9.1 --index-url https://download.pytorch.org/whl/cu128
 uv pip install -e '.[train]'
+```
 
+The commands below use the longer default training profiles. For the published numbers, follow the [recorded run settings and commands](docs/ABLATION_REPORT.md#reproduce-the-qwen-ablation).
+
+```bash
 verifine data --seed 42
 bash scripts/start-wsl-train.sh sft
 bash scripts/start-wsl-train.sh grpo

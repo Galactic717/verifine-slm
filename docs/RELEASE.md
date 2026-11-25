@@ -1,5 +1,7 @@
 # Release artifacts
 
+The GitHub source release includes benchmark reports and the code to replay recorded predictions on CPU. Live inference and training require separately obtained model weights. Follow the [recorded Qwen run settings](ABLATION_REPORT.md#reproduce-the-qwen-ablation) to generate the adapters used in the ablation.
+
 Choose a Hugging Face namespace for the adapter, quantized weights, dataset and Space. Follow the original base-model license and include it with its attribution. Use one repository per artifact type or distinct subdirectories in a model repository.
 
 Run `python scripts/prepare-release.py --adapter artifacts/qwen-grpo --base "$VERIFINE_QWEN_MODEL"` to stage the adapter and synthetic dataset. The script verifies the base shard hashes before recording the pinned base ID and revision. It includes the base license, model card, dataset card and exact data manifest. Copy the GGUF, the applicable model card as `README.md`, and the original base license into `artifacts/release/gguf`.
@@ -15,4 +17,4 @@ hf upload YOUR_NAME/verifine-demo artifacts/space . --repo-type space
 
 The Space uses recorded predictions from matched synthetic cases. Generate it by passing two reports and their exact dataset to `scripts/prepare-space.py`. The generated directory contains the self-contained Gradio app, its Space metadata, and synthetic examples. The Space can replay them on CPU.
 
-Use the input dataset hash and both run manifests to reproduce the public tables. Report the context length, engine version, concurrency, sampling settings, GPU and quantization format for serving comparisons.
+Use the dataset manifest and recorded evaluation reports to check the public tables. Report the context length, engine version, concurrency, sampling settings, GPU and quantization format for serving comparisons.
