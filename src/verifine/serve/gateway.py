@@ -115,7 +115,7 @@ def create_app(
                 messages(request.task, request.document),
                 schema=SCHEMAS[request.task].model_json_schema() if request.constrained else None,
             )
-        except (httpx.HTTPError, KeyError, TypeError, ValueError):
+        except (httpx.HTTPError, IndexError, KeyError, TypeError, ValueError):
             meter(route, "upstream_error", started)
             raise HTTPException(502, "Backend could not complete the request") from None
         _, parsed = parse_output(request.task, answer.text)

@@ -43,24 +43,37 @@ def test_stream_rejects_missing_terminator() -> None:
     asyncio.run(run())
 
 
-def test_gateway_validates_structured_response() -> None:
+@pytest.mark.parametrize(
+    ("choices", "status"),
+    [
+        ([{"message": {"content": "{}"}}], "invalid_output"),
+        ([], "upstream_error"),
+    ],
+    ids=["invalid-schema", "empty-choices"],
+)
+def test_gateway_rejects_invalid_extraction_response(
+    choices: list[dict[str, object]], status: str
+) -> None:
     def upstream(request: httpx.Request) -> httpx.Response:
         assert request.url.path == "/v1/chat/completions"
         assert json.loads(request.content)["response_format"]["type"] == "json_schema"
-        return httpx.Response(200, json={"choices": [{"message": {"content": "{}"}}]})
+        return httpx.Response(200, json={"choices": choices})
 
     async def run() -> None:
         app = create_app(Config(model="test"), httpx.MockTransport(upstream))
         async with app.router.lifespan_context(app):
             async with httpx.AsyncClient(
-                transport=httpx.ASGITransport(app=app),
+                transport=httpx.ASGITransport(app=app, raise_app_exceptions=False),
                 base_url="http://test",
             ) as client:
                 response = await client.post(
                     "/v1/extract", json={"task": "invoice", "document": "A"}
                 )
                 assert response.status_code == 502
-                assert "verifine_requests_total" in (await client.get("/metrics")).text
+                metrics = (await client.get("/metrics")).text
+                assert (
+                    f'verifine_requests_total{{route="extract",status="{status}"}} 1.0' in metrics
+                )
 
     asyncio.run(run())
 
